@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		442A6E7E29BEA535004A9CBA /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */; };
+		4454148229B78D350009D58D /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454148029B78D350009D58D /* InitializeSDKCardCell.swift */; };
+		4454148329B78D350009D58D /* InitializeSDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4454148129B78D350009D58D /* InitializeSDKCardCell.xib */; };
+		448E7C3C298D981E00EB2C9D /* toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E7C3B298D981E00EB2C9D /* toast.swift */; };
+		4498392929832ED700B8196C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498392829832ED700B8196C /* AppDelegate.swift */; };
+		4498392B29832ED700B8196C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498392A29832ED700B8196C /* SceneDelegate.swift */; };
+		4498392D29832ED700B8196C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498392C29832ED700B8196C /* MainViewController.swift */; };
+		4498393029832ED700B8196C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4498392E29832ED700B8196C /* Main.storyboard */; };
+		4498393229832ED800B8196C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4498393129832ED800B8196C /* Assets.xcassets */; };
+		4498393C29833B0E00B8196C /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4498393B29833B0E00B8196C /* ZendeskSDKMessaging */; };
+		449DF7CE29E4BA200024825E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
+		449DF7D029E4BA200024825E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7C829E4BA200024825E /* AppDelegate.swift */; };
+		449DF7D129E4BA200024825E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7C929E4BA200024825E /* SceneDelegate.swift */; };
+		449DF7D229E4BA200024825E /* toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7CA29E4BA200024825E /* toast.swift */; };
+		449DF7D329E4BA200024825E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7CB29E4BA200024825E /* MainViewController.swift */; };
+		449DF7D629E4BC850024825E /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 449DF7D529E4BC850024825E /* ZendeskSDKMessaging */; };
+		449DF7E029E4BF810024825E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7DF29E4BF790024825E /* Main.storyboard */; };
+		449DF7E129E4BF840024825E /* ShowConversationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7DB29E4BF6A0024825E /* ShowConversationCardCell.xib */; };
+		449DF7E229E4BF860024825E /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7DC29E4BF6A0024825E /* InitializeSDKCardCell.swift */; };
+		449DF7E329E4BF8A0024825E /* InitializeSDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7DD29E4BF6A0024825E /* InitializeSDKCardCell.xib */; };
+		449DF7E429E4BF8C0024825E /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7DE29E4BF6A0024825E /* ShowConversationCardCell.swift */; };
+		449DF7E929E61B400024825E /* AuthenticationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7E829E61B400024825E /* AuthenticationCell.xib */; };
+		449DF7EB29E61B720024825E /* AuthenticationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7EA29E61B720024825E /* AuthenticationCell.swift */; };
+		44B2833329BEE32D00D85A34 /* ShowConversationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */; };
+		44C386AF29F090E500E5FAFF /* SharpSans-No1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */; };
+		44C386B029F090E700E5FAFF /* SharpSans-No1-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */; };
+		44C6A09C299D428B00B9AC9C /* SharpSans-No1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */; };
+		44C6A09E299D4DA100B9AC9C /* SharpSans-No1-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowConversationCardCell.swift; sourceTree = "<group>"; };
+		4454148029B78D350009D58D /* InitializeSDKCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeSDKCardCell.swift; sourceTree = "<group>"; };
+		4454148129B78D350009D58D /* InitializeSDKCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitializeSDKCardCell.xib; sourceTree = "<group>"; };
+		448E7C3B298D981E00EB2C9D /* toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toast.swift; sourceTree = "<group>"; };
+		4496255329E4B1CD00D389B0 /* jwt_auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jwt_auth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4498392629832ED700B8196C /* hello_world.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hello_world.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4498392829832ED700B8196C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4498392A29832ED700B8196C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4498392C29832ED700B8196C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4498392F29832ED700B8196C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4498393129832ED800B8196C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4498393629832ED800B8196C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449DF7C429E4BA200024825E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449DF7C529E4BA200024825E /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		449DF7C629E4BA200024825E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		449DF7C829E4BA200024825E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		449DF7C929E4BA200024825E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		449DF7CA29E4BA200024825E /* toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toast.swift; sourceTree = "<group>"; };
+		449DF7CB29E4BA200024825E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		449DF7DB29E4BF6A0024825E /* ShowConversationCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowConversationCardCell.xib; sourceTree = "<group>"; };
+		449DF7DC29E4BF6A0024825E /* InitializeSDKCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeSDKCardCell.swift; sourceTree = "<group>"; };
+		449DF7DD29E4BF6A0024825E /* InitializeSDKCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitializeSDKCardCell.xib; sourceTree = "<group>"; };
+		449DF7DE29E4BF6A0024825E /* ShowConversationCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowConversationCardCell.swift; sourceTree = "<group>"; };
+		449DF7DF29E4BF790024825E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		449DF7E829E61B400024825E /* AuthenticationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationCell.xib; sourceTree = "<group>"; };
+		449DF7EA29E61B720024825E /* AuthenticationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCell.swift; sourceTree = "<group>"; };
+		44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowConversationCardCell.xib; sourceTree = "<group>"; };
+		44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SharpSans-No1-Bold.otf"; sourceTree = "<group>"; };
+		44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SharpSans-No1-Medium.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4496255029E4B1CD00D389B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449DF7D629E4BC850024825E /* ZendeskSDKMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498392329832ED700B8196C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4498393C29833B0E00B8196C /* ZendeskSDKMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4454147F29B78C300009D58D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				4454148029B78D350009D58D /* InitializeSDKCardCell.swift */,
+				4454148129B78D350009D58D /* InitializeSDKCardCell.xib */,
+				442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */,
+				44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		4496255429E4B1CD00D389B0 /* jwt_auth */ = {
+			isa = PBXGroup;
+			children = (
+				449DF7C829E4BA200024825E /* AppDelegate.swift */,
+				449DF7C629E4BA200024825E /* Assets.xcassets */,
+				449DF7DF29E4BF790024825E /* Main.storyboard */,
+				449DF7DA29E4BF6A0024825E /* Cards */,
+				449DF7C529E4BA200024825E /* Base.lproj */,
+				449DF7C429E4BA200024825E /* Info.plist */,
+				449DF7CB29E4BA200024825E /* MainViewController.swift */,
+				449DF7C929E4BA200024825E /* SceneDelegate.swift */,
+				449DF7CA29E4BA200024825E /* toast.swift */,
+			);
+			path = jwt_auth;
+			sourceTree = "<group>";
+		};
+		4498390229832A5F00B8196C = {
+			isa = PBXGroup;
+			children = (
+				44C6A09A299D424800B9AC9C /* fonts */,
+				4498392729832ED700B8196C /* hello_world */,
+				4496255429E4B1CD00D389B0 /* jwt_auth */,
+				4498390C29832A5F00B8196C /* Products */,
+				449DF7D429E4BC850024825E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4498390C29832A5F00B8196C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4498392629832ED700B8196C /* hello_world.app */,
+				4496255329E4B1CD00D389B0 /* jwt_auth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4498392729832ED700B8196C /* hello_world */ = {
+			isa = PBXGroup;
+			children = (
+				4454147F29B78C300009D58D /* Cards */,
+				4498392829832ED700B8196C /* AppDelegate.swift */,
+				4498392A29832ED700B8196C /* SceneDelegate.swift */,
+				4498392C29832ED700B8196C /* MainViewController.swift */,
+				448E7C3B298D981E00EB2C9D /* toast.swift */,
+				4498392E29832ED700B8196C /* Main.storyboard */,
+				4498393129832ED800B8196C /* Assets.xcassets */,
+				4498393629832ED800B8196C /* Info.plist */,
+			);
+			path = hello_world;
+			sourceTree = "<group>";
+		};
+		449DF7D429E4BC850024825E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449DF7DA29E4BF6A0024825E /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				449DF7DB29E4BF6A0024825E /* ShowConversationCardCell.xib */,
+				449DF7DD29E4BF6A0024825E /* InitializeSDKCardCell.xib */,
+				449DF7E829E61B400024825E /* AuthenticationCell.xib */,
+				449DF7DC29E4BF6A0024825E /* InitializeSDKCardCell.swift */,
+				449DF7EA29E61B720024825E /* AuthenticationCell.swift */,
+				449DF7DE29E4BF6A0024825E /* ShowConversationCardCell.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		44C6A09A299D424800B9AC9C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */,
+				44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4496255229E4B1CD00D389B0 /* jwt_auth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4496256629E4B1CF00D389B0 /* Build configuration list for PBXNativeTarget "jwt_auth" */;
+			buildPhases = (
+				4496254F29E4B1CD00D389B0 /* Sources */,
+				4496255029E4B1CD00D389B0 /* Frameworks */,
+				4496255129E4B1CD00D389B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jwt_auth;
+			packageProductDependencies = (
+				449DF7D529E4BC850024825E /* ZendeskSDKMessaging */,
+			);
+			productName = jwt_auth;
+			productReference = 4496255329E4B1CD00D389B0 /* jwt_auth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4498392529832ED700B8196C /* hello_world */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4498393729832ED800B8196C /* Build configuration list for PBXNativeTarget "hello_world" */;
+			buildPhases = (
+				4498392229832ED700B8196C /* Sources */,
+				4498392329832ED700B8196C /* Frameworks */,
+				4498392429832ED700B8196C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hello_world;
+			packageProductDependencies = (
+				4498393B29833B0E00B8196C /* ZendeskSDKMessaging */,
+			);
+			productName = hello_world;
+			productReference = 4498392629832ED700B8196C /* hello_world.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4498390329832A5F00B8196C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					4496255229E4B1CD00D389B0 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+					4498392529832ED700B8196C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 4498390629832A5F00B8196C /* Build configuration list for PBXProject "sdk_demo_apps" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4498390229832A5F00B8196C;
+			packageReferences = (
+				4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */,
+			);
+			productRefGroup = 4498390C29832A5F00B8196C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4498392529832ED700B8196C /* hello_world */,
+				4496255229E4B1CD00D389B0 /* jwt_auth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4496255129E4B1CD00D389B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449DF7E329E4BF8A0024825E /* InitializeSDKCardCell.xib in Resources */,
+				44C386AF29F090E500E5FAFF /* SharpSans-No1-Bold.otf in Resources */,
+				449DF7E129E4BF840024825E /* ShowConversationCardCell.xib in Resources */,
+				44C386B029F090E700E5FAFF /* SharpSans-No1-Medium.otf in Resources */,
+				449DF7CE29E4BA200024825E /* Assets.xcassets in Resources */,
+				449DF7E029E4BF810024825E /* Main.storyboard in Resources */,
+				449DF7E929E61B400024825E /* AuthenticationCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498392429832ED700B8196C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B2833329BEE32D00D85A34 /* ShowConversationCardCell.xib in Resources */,
+				4454148329B78D350009D58D /* InitializeSDKCardCell.xib in Resources */,
+				44C6A09C299D428B00B9AC9C /* SharpSans-No1-Bold.otf in Resources */,
+				4498393229832ED800B8196C /* Assets.xcassets in Resources */,
+				44C6A09E299D4DA100B9AC9C /* SharpSans-No1-Medium.otf in Resources */,
+				4498393029832ED700B8196C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4496254F29E4B1CD00D389B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449DF7D029E4BA200024825E /* AppDelegate.swift in Sources */,
+				449DF7E429E4BF8C0024825E /* ShowConversationCardCell.swift in Sources */,
+				449DF7EB29E61B720024825E /* AuthenticationCell.swift in Sources */,
+				449DF7D229E4BA200024825E /* toast.swift in Sources */,
+				449DF7D129E4BA200024825E /* SceneDelegate.swift in Sources */,
+				449DF7E229E4BF860024825E /* InitializeSDKCardCell.swift in Sources */,
+				449DF7D329E4BA200024825E /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498392229832ED700B8196C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442A6E7E29BEA535004A9CBA /* ShowConversationCardCell.swift in Sources */,
+				4498392D29832ED700B8196C /* MainViewController.swift in Sources */,
+				448E7C3C298D981E00EB2C9D /* toast.swift in Sources */,
+				4498392929832ED700B8196C /* AppDelegate.swift in Sources */,
+				4454148229B78D350009D58D /* InitializeSDKCardCell.swift in Sources */,
+				4498392B29832ED700B8196C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4498392E29832ED700B8196C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4498392F29832ED700B8196C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4496256429E4B1CF00D389B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H7YV8PZS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = jwt_auth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adietrich.jwt-auth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4496256529E4B1CF00D389B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H7YV8PZS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = jwt_auth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adietrich.jwt-auth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4498391D29832A6000B8196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4498391E29832A6000B8196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4498393829832ED800B8196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hello_world/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.hello-world";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4498393929832ED800B8196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hello_world/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.hello-world";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4496256629E4B1CF00D389B0 /* Build configuration list for PBXNativeTarget "jwt_auth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4496256429E4B1CF00D389B0 /* Debug */,
+				4496256529E4B1CF00D389B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4498390629832A5F00B8196C /* Build configuration list for PBXProject "sdk_demo_apps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4498391D29832A6000B8196C /* Debug */,
+				4498391E29832A6000B8196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4498393729832ED800B8196C /* Build configuration list for PBXNativeTarget "hello_world" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4498393829832ED800B8196C /* Debug */,
+				4498393929832ED800B8196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zendesk/sdk_messaging_ios/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4498393B29833B0E00B8196C /* ZendeskSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
+			productName = ZendeskSDKMessaging;
+		};
+		449DF7D529E4BC850024825E /* ZendeskSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
+			productName = ZendeskSDKMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4498390329832A5F00B8196C /* Project object */;
+}
