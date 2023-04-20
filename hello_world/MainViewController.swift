@@ -122,7 +122,7 @@ extension MainViewController {
             // If table view fails to dequeue the cell we want (InitializeSDKCardCell) then show a dumb table view cell
             return UITableViewCell()
         }
-        
+#warning("provide channel key")
         let channel_key = ""
         
         cell.clickHandler = {[weak self] in
@@ -148,7 +148,7 @@ extension MainViewController {
         }
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
-#warning("Basic presentation via the navigation controller.")
+#warning("Basic conversation presentation via the navigation controller.")
             guard let viewController = Zendesk.instance?.messaging?.messagingViewController() else { return }
             self.navigationController?.show(viewController, sender: self)
         }

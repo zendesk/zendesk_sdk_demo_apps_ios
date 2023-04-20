@@ -127,7 +127,7 @@ extension MainViewController {
             // If table view fails to dequeue the cell we want (InitializeSDKCardCell) then show a dumb table view cell
             return UITableViewCell()
         }
-        
+#warning("provide channel key")
         let channel_key = ""
         
         cell.clickHandler = {[weak self] in
@@ -156,7 +156,7 @@ extension MainViewController {
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
             
-#warning("Basic presentation via the navigation controller.")
+#warning("Basic conversation presentation via the navigation controller.")
             guard let viewController = Zendesk.instance?.messaging?.messagingViewController() else { return }
             self.navigationController?.show(viewController, sender: self)
         }
@@ -172,7 +172,7 @@ extension MainViewController {
 #warning("Basic JWT auth, with a custom alert in case of failure, and a custom toast in case of success.")
         cell.loginHandler = { [weak self] in
             guard let self = self else { return }
-            
+#warning ("Provide JWT token from your service")
             let jwt_token = ""
             
             Zendesk.instance?.loginUser(with: jwt_token) { result in
