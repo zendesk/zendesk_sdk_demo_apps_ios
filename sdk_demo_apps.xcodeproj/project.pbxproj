@@ -1,0 +1,1377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		442A6E7E29BEA535004A9CBA /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */; };
+		4445FD2A2A313AE6003D39C7 /* InitializeSDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4454148129B78D350009D58D /* InitializeSDKCardCell.xib */; };
+		4445FD2B2A313AE6003D39C7 /* InitializeSDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4454148129B78D350009D58D /* InitializeSDKCardCell.xib */; };
+		4445FD2C2A313AE7003D39C7 /* InitializeSDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4454148129B78D350009D58D /* InitializeSDKCardCell.xib */; };
+		4445FD2D2A313AE9003D39C7 /* InitializeSDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4454148129B78D350009D58D /* InitializeSDKCardCell.xib */; };
+		4445FD2E2A313AEC003D39C7 /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */; };
+		4445FD2F2A313AEC003D39C7 /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */; };
+		4445FD302A313AED003D39C7 /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */; };
+		4445FD312A313AED003D39C7 /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */; };
+		4445FD322A313AF2003D39C7 /* ShowConversationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */; };
+		4445FD332A313AF3003D39C7 /* ShowConversationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */; };
+		4445FD342A313AF3003D39C7 /* ShowConversationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */; };
+		4445FD352A313AF4003D39C7 /* ShowConversationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */; };
+		4445FD362A313CB5003D39C7 /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454148029B78D350009D58D /* InitializeSDKCardCell.swift */; };
+		4445FD372A313CB5003D39C7 /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454148029B78D350009D58D /* InitializeSDKCardCell.swift */; };
+		4445FD382A313CB6003D39C7 /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454148029B78D350009D58D /* InitializeSDKCardCell.swift */; };
+		4445FD392A313CB6003D39C7 /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454148029B78D350009D58D /* InitializeSDKCardCell.swift */; };
+		4454148229B78D350009D58D /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454148029B78D350009D58D /* InitializeSDKCardCell.swift */; };
+		4454148329B78D350009D58D /* InitializeSDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4454148129B78D350009D58D /* InitializeSDKCardCell.xib */; };
+		445FA57B2A321F3B00758AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FA57A2A321F3B00758AF9 /* AppDelegate.swift */; };
+		445FA57D2A321F3B00758AF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FA57C2A321F3B00758AF9 /* SceneDelegate.swift */; };
+		445FA57F2A321F3B00758AF9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FA57E2A321F3B00758AF9 /* MainViewController.swift */; };
+		445FA5872A321F3C00758AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445FA5852A321F3C00758AF9 /* LaunchScreen.storyboard */; };
+		445FA58C2A32208600758AF9 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */; };
+		445FA58D2A32208800758AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
+		445FA58E2A32208D00758AF9 /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454148029B78D350009D58D /* InitializeSDKCardCell.swift */; };
+		445FA58F2A32209000758AF9 /* InitializeSDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4454148129B78D350009D58D /* InitializeSDKCardCell.xib */; };
+		445FA5902A32209200758AF9 /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */; };
+		445FA5912A32209500758AF9 /* ShowConversationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */; };
+		445FA5942A32215300758AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445FA5922A32215200758AF9 /* Main.storyboard */; };
+		445FA5982A3221BE00758AF9 /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 445FA5972A3221BE00758AF9 /* ZendeskSDKMessaging */; };
+		445FA59A2A3221C200758AF9 /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 445FA5992A3221C200758AF9 /* ZendeskSDKMessaging */; };
+		445FA59C2A32236800758AF9 /* SharpSans-No1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */; };
+		445FA59D2A32236A00758AF9 /* SharpSans-No1-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */; };
+		445FA59F2A3223E300758AF9 /* RegisterPushCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FA59E2A3223E300758AF9 /* RegisterPushCardCell.swift */; };
+		445FA5A12A32242700758AF9 /* RegisterPushCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445FA5A02A32242700758AF9 /* RegisterPushCardCell.xib */; };
+		4498392929832ED700B8196C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498392829832ED700B8196C /* AppDelegate.swift */; };
+		4498392B29832ED700B8196C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498392A29832ED700B8196C /* SceneDelegate.swift */; };
+		4498392D29832ED700B8196C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498392C29832ED700B8196C /* MainViewController.swift */; };
+		4498393029832ED700B8196C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4498392E29832ED700B8196C /* Main.storyboard */; };
+		4498393C29833B0E00B8196C /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4498393B29833B0E00B8196C /* ZendeskSDKMessaging */; };
+		449DF7CE29E4BA200024825E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
+		449DF7D029E4BA200024825E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7C829E4BA200024825E /* AppDelegate.swift */; };
+		449DF7D129E4BA200024825E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7C929E4BA200024825E /* SceneDelegate.swift */; };
+		449DF7D329E4BA200024825E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7CB29E4BA200024825E /* MainViewController.swift */; };
+		449DF7D629E4BC850024825E /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 449DF7D529E4BC850024825E /* ZendeskSDKMessaging */; };
+		449DF7E029E4BF810024825E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7DF29E4BF790024825E /* Main.storyboard */; };
+		449DF7E929E61B400024825E /* AuthenticationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7E829E61B400024825E /* AuthenticationCell.xib */; };
+		449DF7EB29E61B720024825E /* AuthenticationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DF7EA29E61B720024825E /* AuthenticationCell.swift */; };
+		44A9BC142A0A8CF2008BF286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A9BC132A0A8CF2008BF286 /* AppDelegate.swift */; };
+		44A9BC162A0A8CF2008BF286 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A9BC152A0A8CF2008BF286 /* SceneDelegate.swift */; };
+		44A9BC182A0A8CF2008BF286 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A9BC172A0A8CF2008BF286 /* MainViewController.swift */; };
+		44A9BC472A0A9026008BF286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A9BC462A0A9026008BF286 /* Main.storyboard */; };
+		44A9BC4C2A0A911A008BF286 /* SharpSans-No1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */; };
+		44A9BC4D2A0A911D008BF286 /* SharpSans-No1-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */; };
+		44A9BC552A0AE7C2008BF286 /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 44A9BC542A0AE7C2008BF286 /* ZendeskSDKMessaging */; };
+		44B14FF12A1C917500CC9FDF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B14FE92A1C917400CC9FDF /* MainViewController.swift */; };
+		44B14FF42A1C917500CC9FDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B14FEC2A1C917400CC9FDF /* SceneDelegate.swift */; };
+		44B14FF72A1C917500CC9FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B14FEF2A1C917400CC9FDF /* AppDelegate.swift */; };
+		44B14FFA2A1C918900CC9FDF /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 44B14FF92A1C918900CC9FDF /* ZendeskSDKMessaging */; };
+		44B150062A1C932A00CC9FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B150052A1C932A00CC9FDF /* Main.storyboard */; };
+		44B1500A2A1C93A400CC9FDF /* SharpSans-No1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */; };
+		44B1500B2A1C93A600CC9FDF /* SharpSans-No1-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */; };
+		44B1500D2A1C93DB00CC9FDF /* PageViewCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B1500C2A1C93DB00CC9FDF /* PageViewCardCell.xib */; };
+		44B1500F2A1C93F100CC9FDF /* PageViewCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1500E2A1C93F100CC9FDF /* PageViewCardCell.swift */; };
+		44B150312A1CA19800CC9FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B150292A1CA19700CC9FDF /* Main.storyboard */; };
+		44B150322A1CA19800CC9FDF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1502A2A1CA19700CC9FDF /* MainViewController.swift */; };
+		44B150332A1CA19800CC9FDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1502B2A1CA19700CC9FDF /* SceneDelegate.swift */; };
+		44B150362A1CA19800CC9FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1502E2A1CA19700CC9FDF /* AppDelegate.swift */; };
+		44B150452A1CA1E500CC9FDF /* SharpSans-No1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */; };
+		44B150462A1CA1E800CC9FDF /* SharpSans-No1-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */; };
+		44B150482A1CA20700CC9FDF /* ClickableLinksCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B150472A1CA20700CC9FDF /* ClickableLinksCardCell.swift */; };
+		44B1504A2A1CA21600CC9FDF /* ClickableLinksCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B150492A1CA21600CC9FDF /* ClickableLinksCardCell.xib */; };
+		44B2833329BEE32D00D85A34 /* ShowConversationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */; };
+		44C386AF29F090E500E5FAFF /* SharpSans-No1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */; };
+		44C386B029F090E700E5FAFF /* SharpSans-No1-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */; };
+		44C6A09C299D428B00B9AC9C /* SharpSans-No1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */; };
+		44C6A09E299D4DA100B9AC9C /* SharpSans-No1-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */; };
+		44C9E3A92A0BD6B800FDA5FC /* ShowUnreadCountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44C9E3A82A0BD6B800FDA5FC /* ShowUnreadCountCell.xib */; };
+		44C9E3AB2A0BD6CC00FDA5FC /* ShowUnreadCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9E3AA2A0BD6CC00FDA5FC /* ShowUnreadCountCell.swift */; };
+		44CC6EA32A313F00005AEF84 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */; };
+		44CC6EA42A313F00005AEF84 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */; };
+		44CC6EA52A313F00005AEF84 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */; };
+		44CC6EA62A313F00005AEF84 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */; };
+		44CC6EA72A313F00005AEF84 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */; };
+		44CC6EA92A3142A7005AEF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
+		44CC6EAA2A3142A7005AEF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
+		44CC6EAB2A3142A8005AEF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
+		44CC6EAC2A3142A8005AEF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowConversationCardCell.swift; sourceTree = "<group>"; };
+		444AFEDA2A3295B4009F1FA7 /* Push notifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Push notifications.entitlements"; sourceTree = "<group>"; };
+		4454148029B78D350009D58D /* InitializeSDKCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeSDKCardCell.swift; sourceTree = "<group>"; };
+		4454148129B78D350009D58D /* InitializeSDKCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitializeSDKCardCell.xib; sourceTree = "<group>"; };
+		445FA5782A321F3B00758AF9 /* Push notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		445FA57A2A321F3B00758AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		445FA57C2A321F3B00758AF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		445FA57E2A321F3B00758AF9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		445FA5862A321F3C00758AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		445FA5882A321F3C00758AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445FA5932A32215200758AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		445FA59E2A3223E300758AF9 /* RegisterPushCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterPushCardCell.swift; path = "Push notifications/Cards/RegisterPushCardCell.swift"; sourceTree = SOURCE_ROOT; };
+		445FA5A02A32242700758AF9 /* RegisterPushCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegisterPushCardCell.xib; path = "Push notifications/Cards/RegisterPushCardCell.xib"; sourceTree = SOURCE_ROOT; };
+		4496255329E4B1CD00D389B0 /* JWT auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JWT auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4498392629832ED700B8196C /* Hello world.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello world.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4498392829832ED700B8196C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4498392A29832ED700B8196C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4498392C29832ED700B8196C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4498392F29832ED700B8196C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4498393629832ED800B8196C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449DF7C429E4BA200024825E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449DF7C629E4BA200024825E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		449DF7C829E4BA200024825E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		449DF7C929E4BA200024825E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		449DF7CB29E4BA200024825E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		449DF7DF29E4BF790024825E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		449DF7E829E61B400024825E /* AuthenticationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationCell.xib; sourceTree = "<group>"; };
+		449DF7EA29E61B720024825E /* AuthenticationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCell.swift; sourceTree = "<group>"; };
+		44A9BC112A0A8CF2008BF286 /* Unread messages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unread messages.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A9BC132A0A8CF2008BF286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44A9BC152A0A8CF2008BF286 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44A9BC172A0A8CF2008BF286 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		44A9BC462A0A9026008BF286 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		44A9BC4E2A0ADE08008BF286 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B14FD52A1C90D800CC9FDF /* Visitor path.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visitor path.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B14FE92A1C917400CC9FDF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		44B14FEA2A1C917400CC9FDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B14FEC2A1C917400CC9FDF /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44B14FEF2A1C917400CC9FDF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44B150052A1C932A00CC9FDF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		44B1500C2A1C93DB00CC9FDF /* PageViewCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewCardCell.xib; sourceTree = "<group>"; };
+		44B1500E2A1C93F100CC9FDF /* PageViewCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewCardCell.swift; sourceTree = "<group>"; };
+		44B150142A1CA11000CC9FDF /* Clickable links.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clickable links.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B150292A1CA19700CC9FDF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		44B1502A2A1CA19700CC9FDF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		44B1502B2A1CA19700CC9FDF /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44B1502E2A1CA19700CC9FDF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44B1502F2A1CA19800CC9FDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B150472A1CA20700CC9FDF /* ClickableLinksCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickableLinksCardCell.swift; sourceTree = "<group>"; };
+		44B150492A1CA21600CC9FDF /* ClickableLinksCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClickableLinksCardCell.xib; sourceTree = "<group>"; };
+		44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowConversationCardCell.xib; sourceTree = "<group>"; };
+		44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SharpSans-No1-Bold.otf"; sourceTree = "<group>"; };
+		44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SharpSans-No1-Medium.otf"; sourceTree = "<group>"; };
+		44C9E3A82A0BD6B800FDA5FC /* ShowUnreadCountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowUnreadCountCell.xib; sourceTree = "<group>"; };
+		44C9E3AA2A0BD6CC00FDA5FC /* ShowUnreadCountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUnreadCountCell.swift; sourceTree = "<group>"; };
+		44C9E3AC2A0BE1DF00FDA5FC /* Unread messages.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Unread messages.entitlements"; sourceTree = "<group>"; };
+		44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		445FA5752A321F3B00758AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445FA59A2A3221C200758AF9 /* ZendeskSDKMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4496255029E4B1CD00D389B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449DF7D629E4BC850024825E /* ZendeskSDKMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498392329832ED700B8196C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4498393C29833B0E00B8196C /* ZendeskSDKMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A9BC0E2A0A8CF2008BF286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A9BC552A0AE7C2008BF286 /* ZendeskSDKMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B14FD22A1C90D800CC9FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B14FFA2A1C918900CC9FDF /* ZendeskSDKMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B150112A1CA11000CC9FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445FA5982A3221BE00758AF9 /* ZendeskSDKMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4445FD252A313AA3003D39C7 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				4454148029B78D350009D58D /* InitializeSDKCardCell.swift */,
+				4454148129B78D350009D58D /* InitializeSDKCardCell.xib */,
+				442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */,
+				44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		445FA5792A321F3B00758AF9 /* Push notifications */ = {
+			isa = PBXGroup;
+			children = (
+				444AFEDA2A3295B4009F1FA7 /* Push notifications.entitlements */,
+				445FA59B2A32231100758AF9 /* Cards */,
+				445FA5922A32215200758AF9 /* Main.storyboard */,
+				445FA57A2A321F3B00758AF9 /* AppDelegate.swift */,
+				445FA57C2A321F3B00758AF9 /* SceneDelegate.swift */,
+				445FA57E2A321F3B00758AF9 /* MainViewController.swift */,
+				445FA5852A321F3C00758AF9 /* LaunchScreen.storyboard */,
+				445FA5882A321F3C00758AF9 /* Info.plist */,
+			);
+			path = "Push notifications";
+			sourceTree = "<group>";
+		};
+		445FA59B2A32231100758AF9 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				445FA5A02A32242700758AF9 /* RegisterPushCardCell.xib */,
+				445FA59E2A3223E300758AF9 /* RegisterPushCardCell.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		4496255429E4B1CD00D389B0 /* JWT auth */ = {
+			isa = PBXGroup;
+			children = (
+				449DF7C829E4BA200024825E /* AppDelegate.swift */,
+				449DF7DF29E4BF790024825E /* Main.storyboard */,
+				449DF7DA29E4BF6A0024825E /* Cards */,
+				449DF7C429E4BA200024825E /* Info.plist */,
+				449DF7CB29E4BA200024825E /* MainViewController.swift */,
+				449DF7C929E4BA200024825E /* SceneDelegate.swift */,
+			);
+			path = "JWT auth";
+			sourceTree = "<group>";
+		};
+		4498390229832A5F00B8196C = {
+			isa = PBXGroup;
+			children = (
+				44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */,
+				449DF7C629E4BA200024825E /* Assets.xcassets */,
+				4445FD252A313AA3003D39C7 /* Cards */,
+				44C6A09A299D424800B9AC9C /* fonts */,
+				4498392729832ED700B8196C /* Hello world */,
+				4496255429E4B1CD00D389B0 /* JWT auth */,
+				44A9BC122A0A8CF2008BF286 /* Unread messages */,
+				44B14FD62A1C90D800CC9FDF /* Visitor path */,
+				44B150152A1CA11000CC9FDF /* Clickable links */,
+				445FA5792A321F3B00758AF9 /* Push notifications */,
+				4498390C29832A5F00B8196C /* Products */,
+				449DF7D429E4BC850024825E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4498390C29832A5F00B8196C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4498392629832ED700B8196C /* Hello world.app */,
+				4496255329E4B1CD00D389B0 /* JWT auth.app */,
+				44A9BC112A0A8CF2008BF286 /* Unread messages.app */,
+				44B14FD52A1C90D800CC9FDF /* Visitor path.app */,
+				44B150142A1CA11000CC9FDF /* Clickable links.app */,
+				445FA5782A321F3B00758AF9 /* Push notifications.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4498392729832ED700B8196C /* Hello world */ = {
+			isa = PBXGroup;
+			children = (
+				4498392829832ED700B8196C /* AppDelegate.swift */,
+				4498392A29832ED700B8196C /* SceneDelegate.swift */,
+				4498392C29832ED700B8196C /* MainViewController.swift */,
+				4498392E29832ED700B8196C /* Main.storyboard */,
+				4498393629832ED800B8196C /* Info.plist */,
+			);
+			path = "Hello world";
+			sourceTree = "<group>";
+		};
+		449DF7D429E4BC850024825E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449DF7DA29E4BF6A0024825E /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				449DF7E829E61B400024825E /* AuthenticationCell.xib */,
+				449DF7EA29E61B720024825E /* AuthenticationCell.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		44A9BC122A0A8CF2008BF286 /* Unread messages */ = {
+			isa = PBXGroup;
+			children = (
+				44C9E3AC2A0BE1DF00FDA5FC /* Unread messages.entitlements */,
+				44A9BC252A0A8D43008BF286 /* Cards */,
+				44A9BC132A0A8CF2008BF286 /* AppDelegate.swift */,
+				44A9BC152A0A8CF2008BF286 /* SceneDelegate.swift */,
+				44A9BC172A0A8CF2008BF286 /* MainViewController.swift */,
+				44A9BC462A0A9026008BF286 /* Main.storyboard */,
+				44A9BC4E2A0ADE08008BF286 /* Info.plist */,
+			);
+			path = "Unread messages";
+			sourceTree = "<group>";
+		};
+		44A9BC252A0A8D43008BF286 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				44C9E3AA2A0BD6CC00FDA5FC /* ShowUnreadCountCell.swift */,
+				44C9E3A82A0BD6B800FDA5FC /* ShowUnreadCountCell.xib */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		44B14FD62A1C90D800CC9FDF /* Visitor path */ = {
+			isa = PBXGroup;
+			children = (
+				44B150052A1C932A00CC9FDF /* Main.storyboard */,
+				44B14FFB2A1C920700CC9FDF /* Cards */,
+				44B14FEF2A1C917400CC9FDF /* AppDelegate.swift */,
+				44B14FEA2A1C917400CC9FDF /* Info.plist */,
+				44B14FE92A1C917400CC9FDF /* MainViewController.swift */,
+				44B14FEC2A1C917400CC9FDF /* SceneDelegate.swift */,
+			);
+			path = "Visitor path";
+			sourceTree = "<group>";
+		};
+		44B14FFB2A1C920700CC9FDF /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				44B1500E2A1C93F100CC9FDF /* PageViewCardCell.swift */,
+				44B1500C2A1C93DB00CC9FDF /* PageViewCardCell.xib */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		44B150152A1CA11000CC9FDF /* Clickable links */ = {
+			isa = PBXGroup;
+			children = (
+				44B150382A1CA1A700CC9FDF /* Cards */,
+				44B1502E2A1CA19700CC9FDF /* AppDelegate.swift */,
+				44B1502F2A1CA19800CC9FDF /* Info.plist */,
+				44B150292A1CA19700CC9FDF /* Main.storyboard */,
+				44B1502A2A1CA19700CC9FDF /* MainViewController.swift */,
+				44B1502B2A1CA19700CC9FDF /* SceneDelegate.swift */,
+			);
+			path = "Clickable links";
+			sourceTree = "<group>";
+		};
+		44B150382A1CA1A700CC9FDF /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				44B150472A1CA20700CC9FDF /* ClickableLinksCardCell.swift */,
+				44B150492A1CA21600CC9FDF /* ClickableLinksCardCell.xib */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		44C6A09A299D424800B9AC9C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44C6A09B299D428B00B9AC9C /* SharpSans-No1-Bold.otf */,
+				44C6A09D299D4DA000B9AC9C /* SharpSans-No1-Medium.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		445FA5772A321F3B00758AF9 /* Push notifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445FA58B2A321F3C00758AF9 /* Build configuration list for PBXNativeTarget "Push notifications" */;
+			buildPhases = (
+				445FA5742A321F3B00758AF9 /* Sources */,
+				445FA5752A321F3B00758AF9 /* Frameworks */,
+				445FA5762A321F3B00758AF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Push notifications";
+			packageProductDependencies = (
+				445FA5992A3221C200758AF9 /* ZendeskSDKMessaging */,
+			);
+			productName = "push notifications";
+			productReference = 445FA5782A321F3B00758AF9 /* Push notifications.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4496255229E4B1CD00D389B0 /* JWT auth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4496256629E4B1CF00D389B0 /* Build configuration list for PBXNativeTarget "JWT auth" */;
+			buildPhases = (
+				4496254F29E4B1CD00D389B0 /* Sources */,
+				4496255029E4B1CD00D389B0 /* Frameworks */,
+				4496255129E4B1CD00D389B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JWT auth";
+			packageProductDependencies = (
+				449DF7D529E4BC850024825E /* ZendeskSDKMessaging */,
+			);
+			productName = jwt_auth;
+			productReference = 4496255329E4B1CD00D389B0 /* JWT auth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4498392529832ED700B8196C /* Hello world */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4498393729832ED800B8196C /* Build configuration list for PBXNativeTarget "Hello world" */;
+			buildPhases = (
+				4498392229832ED700B8196C /* Sources */,
+				4498392329832ED700B8196C /* Frameworks */,
+				4498392429832ED700B8196C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hello world";
+			packageProductDependencies = (
+				4498393B29833B0E00B8196C /* ZendeskSDKMessaging */,
+			);
+			productName = hello_world;
+			productReference = 4498392629832ED700B8196C /* Hello world.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44A9BC102A0A8CF2008BF286 /* Unread messages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A9BC242A0A8CF3008BF286 /* Build configuration list for PBXNativeTarget "Unread messages" */;
+			buildPhases = (
+				44A9BC0D2A0A8CF2008BF286 /* Sources */,
+				44A9BC0E2A0A8CF2008BF286 /* Frameworks */,
+				44A9BC0F2A0A8CF2008BF286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Unread messages";
+			packageProductDependencies = (
+				44A9BC542A0AE7C2008BF286 /* ZendeskSDKMessaging */,
+			);
+			productName = "Unread messages";
+			productReference = 44A9BC112A0A8CF2008BF286 /* Unread messages.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44B14FD42A1C90D800CC9FDF /* Visitor path */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B14FE82A1C90D900CC9FDF /* Build configuration list for PBXNativeTarget "Visitor path" */;
+			buildPhases = (
+				44B14FD12A1C90D800CC9FDF /* Sources */,
+				44B14FD22A1C90D800CC9FDF /* Frameworks */,
+				44B14FD32A1C90D800CC9FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Visitor path";
+			packageProductDependencies = (
+				44B14FF92A1C918900CC9FDF /* ZendeskSDKMessaging */,
+			);
+			productName = "Visitor path";
+			productReference = 44B14FD52A1C90D800CC9FDF /* Visitor path.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44B150132A1CA11000CC9FDF /* Clickable links */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B150272A1CA11100CC9FDF /* Build configuration list for PBXNativeTarget "Clickable links" */;
+			buildPhases = (
+				44B150102A1CA11000CC9FDF /* Sources */,
+				44B150112A1CA11000CC9FDF /* Frameworks */,
+				44B150122A1CA11000CC9FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clickable links";
+			packageProductDependencies = (
+				445FA5972A3221BE00758AF9 /* ZendeskSDKMessaging */,
+			);
+			productName = "Clickable links";
+			productReference = 44B150142A1CA11000CC9FDF /* Clickable links.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4498390329832A5F00B8196C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					445FA5772A321F3B00758AF9 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					4496255229E4B1CD00D389B0 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+					4498392529832ED700B8196C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					44A9BC102A0A8CF2008BF286 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					44B14FD42A1C90D800CC9FDF = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+					44B150132A1CA11000CC9FDF = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+				};
+			};
+			buildConfigurationList = 4498390629832A5F00B8196C /* Build configuration list for PBXProject "sdk_demo_apps" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4498390229832A5F00B8196C;
+			packageReferences = (
+				4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */,
+			);
+			productRefGroup = 4498390C29832A5F00B8196C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4498392529832ED700B8196C /* Hello world */,
+				4496255229E4B1CD00D389B0 /* JWT auth */,
+				44A9BC102A0A8CF2008BF286 /* Unread messages */,
+				44B14FD42A1C90D800CC9FDF /* Visitor path */,
+				44B150132A1CA11000CC9FDF /* Clickable links */,
+				445FA5772A321F3B00758AF9 /* Push notifications */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		445FA5762A321F3B00758AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445FA58F2A32209000758AF9 /* InitializeSDKCardCell.xib in Resources */,
+				445FA59C2A32236800758AF9 /* SharpSans-No1-Bold.otf in Resources */,
+				445FA5872A321F3C00758AF9 /* LaunchScreen.storyboard in Resources */,
+				445FA59D2A32236A00758AF9 /* SharpSans-No1-Medium.otf in Resources */,
+				445FA5A12A32242700758AF9 /* RegisterPushCardCell.xib in Resources */,
+				445FA5942A32215300758AF9 /* Main.storyboard in Resources */,
+				445FA5912A32209500758AF9 /* ShowConversationCardCell.xib in Resources */,
+				445FA58D2A32208800758AF9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4496255129E4B1CD00D389B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4445FD322A313AF2003D39C7 /* ShowConversationCardCell.xib in Resources */,
+				4445FD2D2A313AE9003D39C7 /* InitializeSDKCardCell.xib in Resources */,
+				44C386AF29F090E500E5FAFF /* SharpSans-No1-Bold.otf in Resources */,
+				44C386B029F090E700E5FAFF /* SharpSans-No1-Medium.otf in Resources */,
+				449DF7CE29E4BA200024825E /* Assets.xcassets in Resources */,
+				449DF7E029E4BF810024825E /* Main.storyboard in Resources */,
+				449DF7E929E61B400024825E /* AuthenticationCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498392429832ED700B8196C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B2833329BEE32D00D85A34 /* ShowConversationCardCell.xib in Resources */,
+				4454148329B78D350009D58D /* InitializeSDKCardCell.xib in Resources */,
+				44C6A09C299D428B00B9AC9C /* SharpSans-No1-Bold.otf in Resources */,
+				44CC6EAC2A3142A8005AEF84 /* Assets.xcassets in Resources */,
+				44C6A09E299D4DA100B9AC9C /* SharpSans-No1-Medium.otf in Resources */,
+				4498393029832ED700B8196C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A9BC0F2A0A8CF2008BF286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4445FD332A313AF3003D39C7 /* ShowConversationCardCell.xib in Resources */,
+				4445FD2C2A313AE7003D39C7 /* InitializeSDKCardCell.xib in Resources */,
+				44A9BC4D2A0A911D008BF286 /* SharpSans-No1-Medium.otf in Resources */,
+				44C9E3A92A0BD6B800FDA5FC /* ShowUnreadCountCell.xib in Resources */,
+				44A9BC472A0A9026008BF286 /* Main.storyboard in Resources */,
+				44CC6EAB2A3142A8005AEF84 /* Assets.xcassets in Resources */,
+				44A9BC4C2A0A911A008BF286 /* SharpSans-No1-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B14FD32A1C90D800CC9FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4445FD342A313AF3003D39C7 /* ShowConversationCardCell.xib in Resources */,
+				4445FD2B2A313AE6003D39C7 /* InitializeSDKCardCell.xib in Resources */,
+				44B1500B2A1C93A600CC9FDF /* SharpSans-No1-Medium.otf in Resources */,
+				44B150062A1C932A00CC9FDF /* Main.storyboard in Resources */,
+				44B1500D2A1C93DB00CC9FDF /* PageViewCardCell.xib in Resources */,
+				44B1500A2A1C93A400CC9FDF /* SharpSans-No1-Bold.otf in Resources */,
+				44CC6EAA2A3142A7005AEF84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B150122A1CA11000CC9FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4445FD352A313AF4003D39C7 /* ShowConversationCardCell.xib in Resources */,
+				4445FD2A2A313AE6003D39C7 /* InitializeSDKCardCell.xib in Resources */,
+				44B1504A2A1CA21600CC9FDF /* ClickableLinksCardCell.xib in Resources */,
+				44B150452A1CA1E500CC9FDF /* SharpSans-No1-Bold.otf in Resources */,
+				44B150462A1CA1E800CC9FDF /* SharpSans-No1-Medium.otf in Resources */,
+				44CC6EA92A3142A7005AEF84 /* Assets.xcassets in Resources */,
+				44B150312A1CA19800CC9FDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		445FA5742A321F3B00758AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445FA58C2A32208600758AF9 /* UIViewController+Extension.swift in Sources */,
+				445FA59F2A3223E300758AF9 /* RegisterPushCardCell.swift in Sources */,
+				445FA5902A32209200758AF9 /* ShowConversationCardCell.swift in Sources */,
+				445FA57F2A321F3B00758AF9 /* MainViewController.swift in Sources */,
+				445FA57B2A321F3B00758AF9 /* AppDelegate.swift in Sources */,
+				445FA58E2A32208D00758AF9 /* InitializeSDKCardCell.swift in Sources */,
+				445FA57D2A321F3B00758AF9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4496254F29E4B1CD00D389B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CC6EA42A313F00005AEF84 /* UIViewController+Extension.swift in Sources */,
+				449DF7D029E4BA200024825E /* AppDelegate.swift in Sources */,
+				4445FD362A313CB5003D39C7 /* InitializeSDKCardCell.swift in Sources */,
+				4445FD312A313AED003D39C7 /* ShowConversationCardCell.swift in Sources */,
+				449DF7EB29E61B720024825E /* AuthenticationCell.swift in Sources */,
+				449DF7D129E4BA200024825E /* SceneDelegate.swift in Sources */,
+				449DF7D329E4BA200024825E /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4498392229832ED700B8196C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442A6E7E29BEA535004A9CBA /* ShowConversationCardCell.swift in Sources */,
+				4498392D29832ED700B8196C /* MainViewController.swift in Sources */,
+				4498392929832ED700B8196C /* AppDelegate.swift in Sources */,
+				44CC6EA32A313F00005AEF84 /* UIViewController+Extension.swift in Sources */,
+				4454148229B78D350009D58D /* InitializeSDKCardCell.swift in Sources */,
+				4498392B29832ED700B8196C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A9BC0D2A0A8CF2008BF286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CC6EA52A313F00005AEF84 /* UIViewController+Extension.swift in Sources */,
+				44A9BC182A0A8CF2008BF286 /* MainViewController.swift in Sources */,
+				4445FD372A313CB5003D39C7 /* InitializeSDKCardCell.swift in Sources */,
+				4445FD302A313AED003D39C7 /* ShowConversationCardCell.swift in Sources */,
+				44A9BC142A0A8CF2008BF286 /* AppDelegate.swift in Sources */,
+				44A9BC162A0A8CF2008BF286 /* SceneDelegate.swift in Sources */,
+				44C9E3AB2A0BD6CC00FDA5FC /* ShowUnreadCountCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B14FD12A1C90D800CC9FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CC6EA62A313F00005AEF84 /* UIViewController+Extension.swift in Sources */,
+				44B14FF72A1C917500CC9FDF /* AppDelegate.swift in Sources */,
+				4445FD382A313CB6003D39C7 /* InitializeSDKCardCell.swift in Sources */,
+				4445FD2F2A313AEC003D39C7 /* ShowConversationCardCell.swift in Sources */,
+				44B14FF12A1C917500CC9FDF /* MainViewController.swift in Sources */,
+				44B1500F2A1C93F100CC9FDF /* PageViewCardCell.swift in Sources */,
+				44B14FF42A1C917500CC9FDF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B150102A1CA11000CC9FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CC6EA72A313F00005AEF84 /* UIViewController+Extension.swift in Sources */,
+				4445FD2E2A313AEC003D39C7 /* ShowConversationCardCell.swift in Sources */,
+				4445FD392A313CB6003D39C7 /* InitializeSDKCardCell.swift in Sources */,
+				44B150362A1CA19800CC9FDF /* AppDelegate.swift in Sources */,
+				44B150322A1CA19800CC9FDF /* MainViewController.swift in Sources */,
+				44B150482A1CA20700CC9FDF /* ClickableLinksCardCell.swift in Sources */,
+				44B150332A1CA19800CC9FDF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		445FA5852A321F3C00758AF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				445FA5862A321F3C00758AF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		445FA5922A32215200758AF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				445FA5932A32215200758AF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4498392E29832ED700B8196C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4498392F29832ED700B8196C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		445FA5892A321F3C00758AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Push notifications/Push notifications.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "push notifications/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.push-notifications-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "zendesk sdk push demo profile 4";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		445FA58A2A321F3C00758AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Push notifications/Push notifications.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "push notifications/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.push-notifications-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "zendesk sdk push demo profile 4";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4496256429E4B1CF00D389B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "jwt auth/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.jwt-auth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4496256529E4B1CF00D389B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "jwt auth/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.jwt-auth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4498391D29832A6000B8196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4498391E29832A6000B8196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4498393829832ED800B8196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hello world/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.hello-world";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4498393929832ED800B8196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hello world/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.hello-world";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44A9BC222A0A8CF3008BF286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Unread messages/Unread messages.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Unread messages/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.Unread-messages-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44A9BC232A0A8CF3008BF286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Unread messages/Unread messages.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Unread messages/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.Unread-messages-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44B14FE62A1C90D900CC9FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Visitor path/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.Visitor-path";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44B14FE72A1C90D900CC9FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Visitor path/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.Visitor-path";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44B150252A1CA11100CC9FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clickable links/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.Clickable-links";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44B150262A1CA11100CC9FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 689VA4CD22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clickable links/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.Clickable-links";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		445FA58B2A321F3C00758AF9 /* Build configuration list for PBXNativeTarget "Push notifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445FA5892A321F3C00758AF9 /* Debug */,
+				445FA58A2A321F3C00758AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4496256629E4B1CF00D389B0 /* Build configuration list for PBXNativeTarget "JWT auth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4496256429E4B1CF00D389B0 /* Debug */,
+				4496256529E4B1CF00D389B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4498390629832A5F00B8196C /* Build configuration list for PBXProject "sdk_demo_apps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4498391D29832A6000B8196C /* Debug */,
+				4498391E29832A6000B8196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4498393729832ED800B8196C /* Build configuration list for PBXNativeTarget "Hello world" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4498393829832ED800B8196C /* Debug */,
+				4498393929832ED800B8196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44A9BC242A0A8CF3008BF286 /* Build configuration list for PBXNativeTarget "Unread messages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44A9BC222A0A8CF3008BF286 /* Debug */,
+				44A9BC232A0A8CF3008BF286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B14FE82A1C90D900CC9FDF /* Build configuration list for PBXNativeTarget "Visitor path" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B14FE62A1C90D900CC9FDF /* Debug */,
+				44B14FE72A1C90D900CC9FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B150272A1CA11100CC9FDF /* Build configuration list for PBXNativeTarget "Clickable links" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B150252A1CA11100CC9FDF /* Debug */,
+				44B150262A1CA11100CC9FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zendesk/sdk_messaging_ios/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		445FA5972A3221BE00758AF9 /* ZendeskSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
+			productName = ZendeskSDKMessaging;
+		};
+		445FA5992A3221C200758AF9 /* ZendeskSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
+			productName = ZendeskSDKMessaging;
+		};
+		4498393B29833B0E00B8196C /* ZendeskSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
+			productName = ZendeskSDKMessaging;
+		};
+		449DF7D529E4BC850024825E /* ZendeskSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
+			productName = ZendeskSDKMessaging;
+		};
+		44A9BC542A0AE7C2008BF286 /* ZendeskSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
+			productName = ZendeskSDKMessaging;
+		};
+		44B14FF92A1C918900CC9FDF /* ZendeskSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
+			productName = ZendeskSDKMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4498390329832A5F00B8196C /* Project object */;
+}
