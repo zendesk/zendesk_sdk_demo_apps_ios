@@ -109,6 +109,7 @@ extension MainViewController {
     
     final class ZendeskDelegate: MessagingDelegate {
 
+#warning("Clickable links function")
         func messaging(_ messaging: Messaging, shouldHandleURL url: URL, from source: URLSource) -> Bool {
             // Your custom action...
             print("Click intercepted -> ")
@@ -146,19 +147,6 @@ extension MainViewController {
             }
         }
         return cell
-    }
-    
-#warning("Clickable links function")
-    func messaging(_ messaging: Messaging, shouldHandleURL url: URL, from source: URLSource) -> Bool {
-        // Your custom action...
-        
-        // Return false to prevent the SDK from handling the URL automatically
-        // Return true to allow the SDK to handle the URL automatically, even
-        // if you have done something custom
-        
-        print("URL handled")
-        
-        return false
     }
     
     func presentCell(indexPath: IndexPath) -> UITableViewCell {
