@@ -106,6 +106,22 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension MainViewController {
+    
+    final class ZendeskDelegate: MessagingDelegate {
+
+        func messaging(_ messaging: Messaging, shouldHandleURL url: URL, from source: URLSource) -> Bool {
+            // Your custom action...
+            print("Click intercepted -> ")
+            print(url)
+            // Return false to prevent the SDK from handling the URL automatically
+            // Return true to allow the SDK to handle the URL automatically, even
+            // if you have done something custom
+            return false
+        }
+    }
+    
+    static let delegate = ZendeskDelegate()
+    
     func initCell(indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainViewController.initializeCardCell, for: indexPath) as? InitializeSDKCardCell else {
             // If table view fails to dequeue the cell we want (InitializeSDKCardCell) then show a dumb table view cell
@@ -125,7 +141,7 @@ extension MainViewController {
                     DispatchQueue.main.async {
                         self.showToast(message: "Initialization Successful", seconds: 2)
                     }
-                    self.messaging(Messaging(), shouldHandleURL: URL(string: "zendesk.com")!, from: URLSource.text)
+                    Messaging.delegate = MainViewController.delegate
                 }
             }
         }
