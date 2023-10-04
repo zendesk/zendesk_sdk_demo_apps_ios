@@ -32,19 +32,15 @@ class MainViewController: UIViewController {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         
-        if #available(iOS 12.0, *) {
-            if traitCollection.userInterfaceStyle == .dark {
-                
-                gradientLayer.removeFromSuperlayer()
-                backgroundView.backgroundColor = UIColor(named: "backgroundColor")
-                
-            }
+        if traitCollection.userInterfaceStyle == .dark {
+            
+            gradientLayer.removeFromSuperlayer()
+            backgroundView.backgroundColor = UIColor(named: "backgroundColor")
+            
         }
         
-        if #available(iOS 12.0, *) {
-            if traitCollection.userInterfaceStyle == .light {
-                insertGradientLayer(gradientLayer, backgroundView: backgroundView)
-            }
+        if traitCollection.userInterfaceStyle == .light {
+            insertGradientLayer(gradientLayer, backgroundView: backgroundView)
         }
     }
     
@@ -56,12 +52,10 @@ class MainViewController: UIViewController {
         let infoButtonColor = UIColor(named: "navTitleColor")
         navBarInfo.tintColor = infoButtonColor
         
-        if #available(iOS 12.0, *) {
-            if traitCollection.userInterfaceStyle == .light {
-                insertGradientLayer(gradientLayer, backgroundView: backgroundView)
-            } else {
-                backgroundView.backgroundColor = UIColor(named: "backgroundColor")
-            }
+        if traitCollection.userInterfaceStyle == .light {
+            insertGradientLayer(gradientLayer, backgroundView: backgroundView)
+        } else {
+            backgroundView.backgroundColor = UIColor(named: "backgroundColor")
         }
     }
 }
