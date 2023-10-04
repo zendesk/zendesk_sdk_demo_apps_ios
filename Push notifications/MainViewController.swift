@@ -10,7 +10,7 @@ import ZendeskSDK
 import ZendeskSDKMessaging
 
 class MainViewController: UIViewController, UNUserNotificationCenterDelegate {
-    
+
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var navBarInfo: UIBarButtonItem!
     @IBOutlet var demoAppView: UIView!
@@ -19,7 +19,7 @@ class MainViewController: UIViewController, UNUserNotificationCenterDelegate {
     static let showConversationCardCell = "ShowConversationCardCell"
     static let registerPushCardCell = "RegisterPushCardCell"
     var gradientLayer = CAGradientLayer()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         styling()
@@ -30,57 +30,51 @@ class MainViewController: UIViewController, UNUserNotificationCenterDelegate {
         tableView.delegate = self
         tableView.separatorColor = .clear
     }
-    
+
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        
-        if #available(iOS 12.0, *) {
-            if traitCollection.userInterfaceStyle == .dark {
-                
-                gradientLayer.removeFromSuperlayer()
-                backgroundView.backgroundColor = UIColor(named: "backgroundColor")
-                
-            }
+
+        if traitCollection.userInterfaceStyle == .dark {
+
+            gradientLayer.removeFromSuperlayer()
+            backgroundView.backgroundColor = UIColor(named: "backgroundColor")
+
         }
-        
-        if #available(iOS 12.0, *) {
-            if traitCollection.userInterfaceStyle == .light {
-                insertGradientLayer(gradientLayer, backgroundView: backgroundView)
-            }
+
+        if traitCollection.userInterfaceStyle == .light {
+            insertGradientLayer(gradientLayer, backgroundView: backgroundView)
         }
     }
-    
+
     @IBAction func infoButtonPressed(_ sender: Any) {
         makeAlert(title: "About this app", message: "This demo app is to help developers get up and running with the Zendesk SDK by providing a quick working example of the software, and providing some useful quick action buttons explore the end user experience.")
     }
-    
+
     func styling() {
         let infoButtonColor = UIColor(named: "navTitleColor")
         navBarInfo.tintColor = infoButtonColor
-        
-        if #available(iOS 12.0, *) {
-            if traitCollection.userInterfaceStyle == .light {
-                insertGradientLayer(gradientLayer, backgroundView: backgroundView)
-            } else {
-                backgroundView.backgroundColor = UIColor(named: "backgroundColor")
-            }
+
+        if traitCollection.userInterfaceStyle == .light {
+            insertGradientLayer(gradientLayer, backgroundView: backgroundView)
+        } else {
+            backgroundView.backgroundColor = UIColor(named: "backgroundColor")
         }
     }
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         3
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let index = [indexPath.row, indexPath.section]
-        
+
         if index == [0,0] {
             return initCell(indexPath: indexPath)
         }
@@ -92,15 +86,15 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return UITableViewCell()
     }
-    
+
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let view = UIView()
         view.isOpaque = false
         view.frame.size.height = 16
-        
+
         return view
     }
-    
+
 }
 
 extension MainViewController {
@@ -111,7 +105,7 @@ extension MainViewController {
         }
 #warning("provide channel key")
         let channel_key = ""
-        
+
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
 #warning("Basic init code with a custom alert in case of failure, and a custom toast in case of success.")
@@ -141,7 +135,7 @@ extension MainViewController {
         }
         return cell
     }
-    
+
     func registerPushCell(indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainViewController.registerPushCardCell, for: indexPath) as? RegisterPushCardCell else {
             // If table view fails to dequeue the cell we want (InitializeSDKCardCell) then show a dumb table view cell
@@ -161,5 +155,5 @@ extension MainViewController {
         }
         return cell
     }
-    
+
 }

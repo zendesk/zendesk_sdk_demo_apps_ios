@@ -32,15 +32,13 @@ class RegisterPushCardCell: UITableViewCell {
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        if #available(iOS 12.0, *) {
-            if traitCollection.userInterfaceStyle == .light {
-                self.contentView.layer.backgroundColor = UIColor.white.cgColor
-                initTextView(interfaceStyleLight: true)
-            } else {
-                self.contentView.layer.backgroundColor = UIColor(named: "cardBackgroundColor")?.cgColor
-                self.contentView.layer.borderColor = UIColor(named: "cardBorderColor")?.cgColor
-                initTextView(interfaceStyleLight: false)
-            }
+        if traitCollection.userInterfaceStyle == .light {
+            self.contentView.layer.backgroundColor = UIColor.white.cgColor
+            initTextView(interfaceStyleLight: true)
+        } else {
+            self.contentView.layer.backgroundColor = UIColor(named: "cardBackgroundColor")?.cgColor
+            self.contentView.layer.borderColor = UIColor(named: "cardBorderColor")?.cgColor
+            initTextView(interfaceStyleLight: false)
         }
     }
     
@@ -81,16 +79,14 @@ class RegisterPushCardCell: UITableViewCell {
         let backgroundView = UIView.init(frame: contentView.frame)
         backgroundView.backgroundColor = UIColor.clear
         
-        if #available(iOS 12.0, *) {
-            if traitCollection.userInterfaceStyle == .light {
-                self.contentView.layer.borderColor = UIColor(named: "cardBorderColor")?.cgColor
-                self.contentView.layer.backgroundColor = UIColor.white.cgColor
-                initTextView(interfaceStyleLight: true)
-            } else {
-                self.contentView.layer.borderColor = UIColor(named: "cardBorderColor")?.cgColor
-                self.contentView.layer.backgroundColor = UIColor(named: "cardBackgroundColor")?.cgColor
-                initTextView(interfaceStyleLight: false)
-            }
+        if traitCollection.userInterfaceStyle == .light {
+            self.contentView.layer.borderColor = UIColor(named: "cardBorderColor")?.cgColor
+            self.contentView.layer.backgroundColor = UIColor.white.cgColor
+            initTextView(interfaceStyleLight: true)
+        } else {
+            self.contentView.layer.borderColor = UIColor(named: "cardBorderColor")?.cgColor
+            self.contentView.layer.backgroundColor = UIColor(named: "cardBackgroundColor")?.cgColor
+            initTextView(interfaceStyleLight: false)
         }
         
         self.registerButton.backgroundColor = UIColor(named: "cardButtonColor")
