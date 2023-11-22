@@ -8,7 +8,6 @@
 import UIKit
 import ZendeskSDK
 
-
 class AuthenticationCell: UITableViewCell {
 
     @IBOutlet weak var cardTitle: UILabel!
