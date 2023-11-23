@@ -1,22 +1,22 @@
 //
-//  InitializeSDKCardCell.swift
-//  hello_world
+//  ViewController.swift
+//  metadata
 //
-//  Created by Andrew Dietrich on 3/7/23.
+//  Created by Arnaud Joly on 11/22/23.
 //
 
 import UIKit
 import ZendeskSDK
 
-class AuthenticationCell: UITableViewCell {
+class FieldsCell: UITableViewCell {
 
     @IBOutlet weak var cardTitle: UILabel!
     @IBOutlet weak var cardDescription: UILabel!
-    @IBOutlet weak var logInButton: UIButton!
-    @IBOutlet weak var logOutButton: UIButton!
+    @IBOutlet weak var addFieldsButton: UIButton!
+    @IBOutlet weak var clearFieldsButton: UIButton!
     @IBOutlet weak var containerView: UIView!
-    var loginHandler: (() -> Void)?
-    var logoutHandler: (() -> Void)?
+    var addHandler: (() -> Void)?
+    var clearHandler: (() -> Void)?
 
     @IBOutlet weak var stackView: UIStackView!
 
@@ -27,14 +27,13 @@ class AuthenticationCell: UITableViewCell {
     }
 
 
-
-    @IBAction func loginButtionClicked(_ sender: Any) {
-        loginHandler?()
+    @IBAction func addButtonClicked(_ sender: Any) {
+        addHandler?()
 
     }
 
-    @IBAction func logOutButtonClicked(_ sender: Any) {
-        logoutHandler?()
+    @IBAction func clearButtonClicked(_ sender: Any) {
+        clearHandler?()
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -49,7 +48,7 @@ class AuthenticationCell: UITableViewCell {
     func styling() {
         self.selectionStyle = UITableViewCell.SelectionStyle.none
 
-        cardDescription.text = "The Zendesk SDK allows authentication of end users so their identity can be trusted by agents using Zendesk."
+        cardDescription.text = "The Zendesk SDK allows values for conversation fields to be set in the SDK to add contextual data about the conversation."
 
         self.layer.cornerRadius = 14
 
@@ -68,13 +67,13 @@ class AuthenticationCell: UITableViewCell {
             self.contentView.layer.backgroundColor = UIColor(named: "cardBackgroundColor")?.cgColor
         }
 
-        self.logInButton.backgroundColor = UIColor(named: "cardButtonColor")
-        self.logInButton.titleLabel?.tintColor = UIColor(named: "cardButtonLabelColor")
-        self.logInButton.layer.cornerRadius = 14
+        self.addFieldsButton.backgroundColor = UIColor(named: "cardButtonColor")
+        self.addFieldsButton.titleLabel?.tintColor = UIColor(named: "cardButtonLabelColor")
+        self.addFieldsButton.layer.cornerRadius = 14
 
-        self.logOutButton.backgroundColor = UIColor(named: "logOutButtonColor")
-        self.logOutButton.titleLabel?.tintColor = UIColor(named: "cardButtonColor")
-        self.logOutButton.layer.cornerRadius = 14
+        self.clearFieldsButton.backgroundColor = UIColor(named: "logOutButtonColor")
+        self.clearFieldsButton.titleLabel?.tintColor = UIColor(named: "cardButtonColor")
+        self.clearFieldsButton.layer.cornerRadius = 14
 
         self.backgroundView = backgroundView
 

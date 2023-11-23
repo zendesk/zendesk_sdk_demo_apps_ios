@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_conversation_kit_ios",
       "state" : {
-        "revision" : "cbc076bb294dcf506b88b22f1ce64c1a45b47dca",
-        "version" : "1.13.0"
+        "revision" : "a40920fac1c54f6aabc6601a45caf1c5951fa57a",
+        "version" : "2.0.0"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_core_utilities_ios",
       "state" : {
-        "revision" : "a3547a67d13ba15998d8fade51aa45053f730957",
-        "version" : "1.6.0"
+        "revision" : "5185f26d675f2012c22fefd326cd45eae78bb5a5",
+        "version" : "1.7.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_faye_client_ios",
       "state" : {
-        "revision" : "dcf10546726b3e2fd0561f7b17176d8a63e97780",
-        "version" : "1.6.0"
+        "revision" : "64f9fbe18cc87a55261f7976bc07e815fbdb2f1a",
+        "version" : "1.7.0"
       }
     },
     {
@@ -51,7 +51,7 @@
       "location" : "https://github.com/zendesk/sdk_messaging_ios/",
       "state" : {
         "branch" : "main",
-        "revision" : "722fe7a5576a1622172ec914191276250810d6ba"
+        "revision" : "2e6f9e7ebf9168e9ab2be062ab2a78a661e0a033"
       }
     },
     {
@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_socket_client_ios",
       "state" : {
-        "revision" : "612e6ccd8c12615162806427663d1ff90b790f50",
-        "version" : "1.6.0"
+        "revision" : "cef2cf3345753921f1fd85f006b2311de77ff799",
+        "version" : "1.7.0"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_ui_components_ios",
       "state" : {
-        "revision" : "ac458b504d772c6e802f8c42a2a9e1e13dce537b",
-        "version" : "3.0.0"
+        "revision" : "2fe947b302bd620fba2e79ea81d669df1477e258",
+        "version" : "4.0.0"
       }
     },
     {
@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_zendesk_ios",
       "state" : {
-        "revision" : "a084c7a0b165be15734ea58809d8a13f0ac04ac9",
-        "version" : "1.16.0"
+        "revision" : "22cbfa2842bf7ed483fcb63ee9a8ea1d3d1f2508",
+        "version" : "1.17.0"
       }
     }
   ],

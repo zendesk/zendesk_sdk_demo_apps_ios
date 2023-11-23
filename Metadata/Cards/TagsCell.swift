@@ -1,14 +1,16 @@
 //
-//  InitializeSDKCardCell.swift
-//  hello_world
+//  ViewController.swift
+//  metadata
 //
-//  Created by Andrew Dietrich on 3/7/23.
+//  Created by Arnaud Joly on 11/22/23.
+//
 //
 
 import UIKit
 import ZendeskSDK
 
-class AuthenticationCell: UITableViewCell {
+
+class TagsCell: UITableViewCell {
 
     @IBOutlet weak var cardTitle: UILabel!
     @IBOutlet weak var cardDescription: UILabel!
