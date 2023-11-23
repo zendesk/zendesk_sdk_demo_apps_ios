@@ -148,6 +148,22 @@ extension MainViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainViewController.fieldsCell, for: indexPath) as? FieldsCell else {
             return UITableViewCell()
         }
+#warning("Add conversation field, with a custom alert in case of failure, and a custom toast in case of success.")
+        cell.addHandler = { [weak self] in
+            guard let self = self else { return }
+#warning ("Provide the field id and value")
+            Zendesk.instance?.messaging!.setConversationFields(["1234567890": "value of the field"])
+            DispatchQueue.main.async {
+                self.showToast(message: "Field Added", seconds: 2)
+            }
+        }
+        cell.clearHandler = { [weak self] in
+            guard let self = self else { return }
+            Zendesk.instance?.messaging!.clearConversationFields()
+            DispatchQueue.main.async {
+                self.showToast(message: "Field cleared", seconds: 2)
+            }
+        }
         // Configure your cell
         return cell
     }
@@ -156,7 +172,22 @@ extension MainViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainViewController.tagsCell, for: indexPath) as? TagsCell else {
             return UITableViewCell()
         }
-        // Configure your cell
+#warning("Add tags, with a custom alert in case of failure, and a custom toast in case of success.")
+        cell.loginHandler = { [weak self] in
+            guard let self = self else { return }
+#warning ("Provide the tags")
+            Zendesk.instance?.messaging!.setConversationTags(["promo_code", "discount"])
+            DispatchQueue.main.async {
+                self.showToast(message: "Tags Added", seconds: 2)
+            }
+        }
+        cell.logoutHandler = { [weak self] in
+            guard let self = self else { return }
+            Zendesk.instance?.messaging!.clearConversationTags()
+            DispatchQueue.main.async {
+                self.showToast(message: "Tags Cleared", seconds: 2)
+            }
+        }
         return cell
     }
     
