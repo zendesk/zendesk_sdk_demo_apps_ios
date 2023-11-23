@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D5F0A8F2B0E346600563B3A"
+               BlueprintIdentifier = "6E2E21462B0EB35400BA7C4F"
                BuildableName = "Metadata.app"
                BlueprintName = "Metadata"
                ReferencedContainer = "container:sdk_demo_apps.xcodeproj">
@@ -43,7 +43,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D5F0A8F2B0E346600563B3A"
+            BlueprintIdentifier = "6E2E21462B0EB35400BA7C4F"
             BuildableName = "Metadata.app"
             BlueprintName = "Metadata"
             ReferencedContainer = "container:sdk_demo_apps.xcodeproj">
@@ -60,7 +60,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D5F0A8F2B0E346600563B3A"
+            BlueprintIdentifier = "6E2E21462B0EB35400BA7C4F"
             BuildableName = "Metadata.app"
             BlueprintName = "Metadata"
             ReferencedContainer = "container:sdk_demo_apps.xcodeproj">
