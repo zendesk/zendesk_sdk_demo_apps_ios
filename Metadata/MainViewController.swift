@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Metadata
+//  metadata
 //
-//  Created by Ajoly on 22/11/2023.
+//  Created by Arnaud Joly on 11/22/23.
 //
 
 import UIKit
@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
         styling()
         tableView.register(UINib(nibName: "InitializeSDKCardCell", bundle: nil), forCellReuseIdentifier: MainViewController.initializeCardCell)
         tableView.register(UINib(nibName: "FieldsCell", bundle: nil), forCellReuseIdentifier: MainViewController.fieldsCell)
-        tableView.register(UINib(nibName: "FieldsCell", bundle: nil), forCellReuseIdentifier: MainViewController.tagsCell)
+        tableView.register(UINib(nibName: "TagsCell", bundle: nil), forCellReuseIdentifier: MainViewController.tagsCell)
         tableView.register(UINib(nibName: "ShowConversationCardCell", bundle: nil), forCellReuseIdentifier: MainViewController.showConversationCardCell)
         tableView.dataSource = self
         tableView.delegate = self
@@ -82,10 +82,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return initCell(indexPath: indexPath)
         }
         if index == [0,1] {
-            return fieldsCell(indexPath: indexPath)
+            return tagsCell(indexPath: indexPath)
         }
         if index == [0,2] {
-            return tagsCell(indexPath: indexPath)
+            return fieldsCell(indexPath: indexPath)
         }
         if index == [0,3] {
             return presentCell(indexPath: indexPath)
@@ -144,54 +144,20 @@ extension MainViewController {
         }
         return cell
     }
-    
-    func fieldsCell(indexPath: IndexPath) -> UITableViewCell {
+        func fieldsCell(indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainViewController.fieldsCell, for: indexPath) as? FieldsCell else {
-            // If table view fails to dequeue the cell we want (InitializeSDKCardCell) then show a dumb table view cell
             return UITableViewCell()
         }
-        
-#warning("Add conversation field, with a custom alert in case of failure, and a custom toast in case of success.")
-        cell.addHandler = { [weak self] in
-            guard let self = self else { return }
-#warning ("Provide the field id and value")
-            Zendesk.instance.messaging.setConversationFields(["1234567890": "value of the field"])
-            DispatchQueue.main.async {
-                self.showToast(message: "Field Added", seconds: 2)
-            }
-        }
-        cell.clearHandler = { [weak self] in
-            guard let self = self else { return }
-            Zendesk.instance.messaging.clearConversationFields()
-            DispatchQueue.main.async {
-                self.showToast(message: "Field cleared", seconds: 2)
-            }
-        }
-    }
-        
-    func tagsCell(indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainViewController.tagsCell, for: indexPath) as? TagsCell else {
-            // If table view fails to dequeue the cell we want (InitializeSDKCardCell) then show a dumb table view cell
-            return UITableViewCell()
-        }
-        
-#warning("Add tags, with a custom alert in case of failure, and a custom toast in case of success.")
-        cell.addHandler = { [weak self] in
-            guard let self = self else { return }
-#warning ("Provide the tags")
-            Zendesk.instance.messaging.setConversationTags(["promo_code", "discount"])
-            DispatchQueue.main.async {
-                self.showToast(message: "Tags Added", seconds: 2)
-            }
-        }
-        cell.clearHandler = { [weak self] in
-            guard let self = self else { return }
-            Zendesk.instance.messaging.clearConversationTags()
-            DispatchQueue.main.async {
-                self.showToast(message: "Tags Cleared", seconds: 2)
-            }
-        }
-        
+        // Configure your cell
         return cell
     }
+
+    func tagsCell(indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainViewController.tagsCell, for: indexPath) as? TagsCell else {
+            return UITableViewCell()
+        }
+        // Configure your cell
+        return cell
+    }
+    
 }

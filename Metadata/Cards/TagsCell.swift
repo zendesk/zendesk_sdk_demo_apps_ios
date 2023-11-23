@@ -1,8 +1,9 @@
 //
-//  MetadataTagsCell.swift
-//  Metadata
+//  ViewController.swift
+//  metadata
 //
-//  Created by Ajoly on 22/11/2023.
+//  Created by Arnaud Joly on 11/22/23.
+//
 //
 
 import UIKit
