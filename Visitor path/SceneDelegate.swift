@@ -1,8 +1,7 @@
 //
 //  SceneDelegate.swift
-//  hello_world
 //
-//  Created by Andrew Dietrich on 1/26/23.
+//  Copyright © 2023 Zendesk. All rights reserved.
 //
 
 import UIKit

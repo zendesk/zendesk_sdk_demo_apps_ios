@@ -1,8 +1,7 @@
 //
-//  ViewController.swift
-//  push notifications
+//  MainViewController.swift
 //
-//  Created by Andrew Dietrich on 6/8/23.
+//  Copyright © 2023 Zendesk. All rights reserved.
 //
 
 import UIKit

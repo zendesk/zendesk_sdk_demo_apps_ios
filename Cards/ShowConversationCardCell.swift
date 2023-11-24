@@ -1,8 +1,7 @@
 //
 //  ShowConversationCardCell.swift
-//  hello_world
 //
-//  Created by Andrew Dietrich on 3/12/23.
+//  Copyright © 2023 Zendesk. All rights reserved.
 //
 
 import UIKit
