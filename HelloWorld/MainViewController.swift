@@ -1,8 +1,7 @@
 //
-//  ViewController.swift
-//  hello_world
+//  MainViewController.swift
 //
-//  Created by Andrew Dietrich on 1/26/23.
+//  Copyright © 2023 Zendesk. All rights reserved.
 //
 
 import UIKit

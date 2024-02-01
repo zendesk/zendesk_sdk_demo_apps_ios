@@ -1,8 +1,7 @@
 //
 //  AppDelegate.swift
-//  push notifications
 //
-//  Created by Andrew Dietrich on 6/8/23.
+//  Copyright © 2023 Zendesk. All rights reserved.
 //
 
 import UIKit

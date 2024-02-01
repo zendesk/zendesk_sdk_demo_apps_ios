@@ -1,8 +1,7 @@
 //
-//  InitializeSDKCardCell.swift
-//  hello_world
+//  AuthenticationCell.swift
 //
-//  Created by Andrew Dietrich on 3/7/23.
+//  Copyright © 2023 Zendesk. All rights reserved.
 //
 
 import UIKit
