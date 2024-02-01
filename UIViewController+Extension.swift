@@ -1,8 +1,7 @@
 //
 //  UIViewController+Extension.swift
-//  sdk_demo_apps
 //
-//  Created by Andrew Dietrich on 6/7/23.
+//  Copyright © 2023 Zendesk. All rights reserved.
 //
 
 import Foundation

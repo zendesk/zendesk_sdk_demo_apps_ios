@@ -1,2 +1,6 @@
 .DS_Store
 *.xcuserstate
+build/
+DerivedData/
+Index/
+xcuserdata/

@@ -1,8 +1,7 @@
 //
 //  AppDelegate.swift
-//  Unread messages
 //
-//  Created by Andrew Dietrich on 5/9/23.
+//  Copyright © 2023 Zendesk. All rights reserved.
 //
 
 import UIKit

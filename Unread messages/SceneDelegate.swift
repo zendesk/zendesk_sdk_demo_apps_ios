@@ -1,12 +1,12 @@
 //
 //  SceneDelegate.swift
-//  Unread messages
 //
-//  Created by Andrew Dietrich on 5/9/23.
+//  Copyright © 2023 Zendesk. All rights reserved.
 //
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
