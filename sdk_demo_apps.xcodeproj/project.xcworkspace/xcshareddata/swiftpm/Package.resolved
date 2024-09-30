@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_conversation_kit_ios",
       "state" : {
-        "revision" : "32d2e55b3f83194324b9088f7f7761472b463584",
-        "version" : "6.1.1"
+        "revision" : "77ca55fec82e01097f43a9ba1824e6e7efd1f50c",
+        "version" : "7.0.0"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_core_utilities_ios",
       "state" : {
-        "revision" : "5852a7bec4060dc41a0e966f18ab86f1b0fabf59",
-        "version" : "2.4.0"
+        "revision" : "53fef7c1983571871b4bcd547335ab4034e40dc7",
+        "version" : "3.0.0"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_guide_kit_ios",
       "state" : {
-        "revision" : "dd184f069d9effca184ae86510eae4c0b9f8c6d6",
-        "version" : "1.1.1"
+        "revision" : "f67f6d216d37f21f57502a8e4cd0b54331b9f5c8",
+        "version" : "1.2.0"
       }
     },
     {
@@ -60,7 +60,7 @@
       "location" : "https://github.com/zendesk/sdk_messaging_ios/",
       "state" : {
         "branch" : "main",
-        "revision" : "40bb600ae097f2b95b20a666fc307f1b2ef4533f"
+        "revision" : "4816f1c5e7e897d03a85e2b92b35462dd6527051"
       }
     },
     {
@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_ui_components_ios",
       "state" : {
-        "revision" : "d83e4e7e211f0b051cb806f19b2fa0f95fd45515",
-        "version" : "9.2.0"
+        "revision" : "2966ce87b3a418f14b6c995325a1339ece81d2bd",
+        "version" : "9.3.0"
       }
     },
     {
@@ -95,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_zendesk_ios",
       "state" : {
-        "revision" : "4a541248741c56b387300d6b3f311bde4872fa6a",
-        "version" : "3.2.1"
+        "revision" : "5f82a701cd9d3f4b7e187a59bfb5d23f1f93bbfc",
+        "version" : "3.3.0"
       }
     }
   ],
