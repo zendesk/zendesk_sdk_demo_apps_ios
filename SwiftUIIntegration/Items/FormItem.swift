@@ -22,16 +22,16 @@ struct FormItem: View {
             ClearableTextField(placeholder: placeHolder, text: $value)
             HStack {
                 Spacer()
-                Button(action: {
+                Button {
                     validate()
-                }) {
+                } label: {
                     Text(validateTitle)
                         .foregroundColor(.blue)
                 }
                 Spacer()
-                Button(action: {
+                Button {
                     invalidate()
-                }) {
+                } label: {
                     Text(invalidateTitle)
                         .foregroundColor(.red)
                 }

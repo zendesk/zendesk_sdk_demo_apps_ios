@@ -15,9 +15,9 @@ struct InfoBannerView: View {
         HStack {
             Text(title)
             Spacer()
-            Button(action: {
+            Button {
                 showAlert = true
-            }) {
+            } label: {
                 Image(systemName: "info.circle")
             }
         }.alert(isPresented: $showAlert) {

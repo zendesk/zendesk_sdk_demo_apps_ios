@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var currentUser: ZendeskSDK.ZendeskUser?
     @State private var isInitialized: Bool = false {
         didSet {
-            if isInitialized, !jwt.isEmpty { loginUser()}
+            if isInitialized, !jwt.isEmpty { loginUser() }
         }
     }
     @State private var isLoggedIn: Bool = false {
@@ -40,6 +40,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                // Initialization
                 Section(header: InfoBannerView.zendeskInitialization) {
                     InitializationItem(channelKey: $channelKey, initialize: {
                         initializeZendeskSDK()
@@ -52,6 +53,7 @@ struct ContentView: View {
                     .disabled(!isInitialized)
                     .opacity(isInitialized ? 1 : 0.5)
                 }
+                // Authentication
                 Section(header: InfoBannerView.authentication) {
                     AuthenticationItem(jwt: $jwt, login: {
                         loginUser()
@@ -66,14 +68,15 @@ struct ContentView: View {
                 }
                 .disabled(!isInitialized)
                 .opacity(isInitialized ? 1 : 0.5)
+                // Page View Events
                 Section(header: InfoBannerView.pageView) {
                     ClearableTextField(placeholder: "Page view title", text: $pageViewTitle)
                     ClearableTextField(placeholder: "Page view URL", text: $pageViewUrl)
-                    Button(action: {
+                    Button {
                         sendPageViewEvent()
-                    }, label: {
+                    } label: {
                         Text("Send Page View Event")
-                    })
+                    }
                     Text("This is a new text")
                 }
                 .disabled(!isInitialized)
