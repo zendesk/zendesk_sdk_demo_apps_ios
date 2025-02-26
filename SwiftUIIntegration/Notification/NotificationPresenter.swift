@@ -4,6 +4,7 @@
 //
 //  Copyright © 2025 Zendesk. All rights reserved.
 //
+import SwiftUI
 
 /// A view that presents the messaging view to present when a message notification is tapped.
 struct NotificationPresenter: View {
