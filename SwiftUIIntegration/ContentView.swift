@@ -28,7 +28,6 @@ struct ContentView: View {
     }
     @State private var pageViewTitle: String = ""
     @State private var pageViewUrl: String = ""
-
     private let logger = Logger(subsystem: Constants.bundleIdentifier, category: Constants.category)
 
     /// Initialize the ContentView with the stored channel key and JWT token.
@@ -39,50 +38,53 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                // Initialization
-                Section(header: InfoBannerView.zendeskInitialization) {
-                    InitializationItem(channelKey: $channelKey, initialize: {
-                        initializeZendeskSDK()
-                    }, invalidate: { clearStorage in
-                        invalidateZendeskSDK(clearStorage: clearStorage)
-                    })
-                    NavigationLink(destination: MessagingView()) {
-                        InfoBannerView.showMessaging
+            VStack {
+                NotificationPresenter()
+                List {
+                    // Initialization
+                    Section(header: InfoBannerView.zendeskInitialization) {
+                        InitializationItem(channelKey: $channelKey, initialize: {
+                            initializeZendeskSDK()
+                        }, invalidate: { clearStorage in
+                            invalidateZendeskSDK(clearStorage: clearStorage)
+                        })
+                        NavigationLink(destination: MessagingView()) {
+                            InfoBannerView.showMessaging
+                        }
+                        .disabled(!isInitialized)
+                        .opacity(isInitialized ? 1 : 0.5)
+                    }
+                    // Authentication
+                    Section(header: InfoBannerView.authentication) {
+                        AuthenticationItem(jwt: $jwt, login: {
+                            loginUser()
+                        }, logout: {
+                            logoutUser()
+                        })
+                        if let currentUser {
+                            Text("User authenticated: \(currentUser.id)")
+                        } else {
+                            Text("No user authenticated")
+                        }
+                    }
+                    .disabled(!isInitialized)
+                    .opacity(isInitialized ? 1 : 0.5)
+                    // Page View Events
+                    Section(header: InfoBannerView.pageView) {
+                        ClearableTextField(placeholder: "Page view title", text: $pageViewTitle)
+                        ClearableTextField(placeholder: "Page view URL", text: $pageViewUrl)
+                        Button {
+                            sendPageViewEvent()
+                        } label: {
+                            Text("Send Page View Event")
+                        }
                     }
                     .disabled(!isInitialized)
                     .opacity(isInitialized ? 1 : 0.5)
                 }
-                // Authentication
-                Section(header: InfoBannerView.authentication) {
-                    AuthenticationItem(jwt: $jwt, login: {
-                        loginUser()
-                    }, logout: {
-                        logoutUser()
-                    })
-                    if let currentUser {
-                        Text("User authenticated: \(currentUser.id)")
-                    } else {
-                        Text("No user authenticated")
-                    }
-                }
-                .disabled(!isInitialized)
-                .opacity(isInitialized ? 1 : 0.5)
-                // Page View Events
-                Section(header: InfoBannerView.pageView) {
-                    ClearableTextField(placeholder: "Page view title", text: $pageViewTitle)
-                    ClearableTextField(placeholder: "Page view URL", text: $pageViewUrl)
-                    Button {
-                        sendPageViewEvent()
-                    } label: {
-                        Text("Send Page View Event")
-                    }
-                }
-                .disabled(!isInitialized)
-                .opacity(isInitialized ? 1 : 0.5)
+                .navigationTitle("Zendesk SDK Demo App")
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .navigationTitle("Zendesk SDK Demo App")
-            .navigationBarTitleDisplayMode(.inline)
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
