@@ -60,6 +60,7 @@
       }
     },
     "This is a new text" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

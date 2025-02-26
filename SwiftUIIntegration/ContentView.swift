@@ -77,7 +77,6 @@ struct ContentView: View {
                     } label: {
                         Text("Send Page View Event")
                     }
-                    Text("This is a new text")
                 }
                 .disabled(!isInitialized)
                 .opacity(isInitialized ? 1 : 0.5)
