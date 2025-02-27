@@ -28,6 +28,7 @@ struct ContentView: View {
     }
     @State private var pageViewTitle: String = ""
     @State private var pageViewUrl: String = ""
+
     private let logger = Logger(subsystem: Constants.bundleIdentifier, category: Constants.category)
 
     /// Initialize the ContentView with the stored channel key and JWT token.
