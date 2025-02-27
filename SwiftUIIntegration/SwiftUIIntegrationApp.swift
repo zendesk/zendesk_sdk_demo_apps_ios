@@ -9,6 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUIIntegrationApp: App {
+
+    private let notificationDelegate = NotificationDelegate()
+
+    init(){
+        UNUserNotificationCenter.current().delegate = notificationDelegate
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()

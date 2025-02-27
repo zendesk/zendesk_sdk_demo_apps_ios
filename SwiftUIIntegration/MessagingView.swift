@@ -12,26 +12,35 @@ import ZendeskSDKMessaging
 
 /// A `View` that wraps the `MessagingViewController`.
 struct MessagingView: View {
-    var body: some View {
-        MessagingViewControllerRepresentable()
-            .ignoresSafeArea()
-    }
-}
-
-/// A `UIViewControllerRepresentable` that wraps the `MessagingViewController`.
-fileprivate struct MessagingViewControllerRepresentable: UIViewControllerRepresentable {
-
     init() {
         #if DEBUG
         Logger.enabled = true
         #endif
     }
-
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+    var body: some View {
+        ViewControllerWrapper(viewController: Zendesk.instance?.messaging?.messagingViewController())
+            .ignoresSafeArea()
     }
+}
+
+/// A `View` that wraps the `MessagingViewController` to present when a messaging notification is tapped.
+struct MessagingNotificationView: View {
+    var body: some View {
+        ViewControllerWrapper(viewController: NotificationManager.shared.presentMessagingView)
+            .ignoresSafeArea()
+    }
+}
+
+/// A `UIViewControllerRepresentable` that wraps a `UIViewController`.
+struct ViewControllerWrapper: UIViewControllerRepresentable {
+    var viewController: UIViewController?
 
     func makeUIViewController(context: Context) -> UIViewController {
-        Zendesk.instance?.messaging?.messagingViewController() ?? ErrorViewController()
+        viewController ?? ErrorViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+        // Update the view controller if needed
     }
 }
 
