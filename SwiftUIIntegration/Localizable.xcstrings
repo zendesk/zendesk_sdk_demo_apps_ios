@@ -1,0 +1,123 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Authentication" : {
+
+    },
+    "Channel Key" : {
+
+    },
+    "Clear Zendesk SDK Storage" : {
+
+    },
+    "Do you want to clear the existing Zendesk SDK storage?" : {
+
+    },
+    "Enter Channel Key" : {
+
+    },
+    "Enter JWT" : {
+
+    },
+    "Initialize" : {
+
+    },
+    "Invalidate" : {
+
+    },
+    "Login" : {
+
+    },
+    "Logout" : {
+
+    },
+    "No" : {
+
+    },
+    "No user authenticated" : {
+
+    },
+    "Page view title" : {
+
+    },
+    "Page view URL" : {
+
+    },
+    "Send Page View Event" : {
+
+    },
+    "Show Messaging" : {
+
+    },
+    "Show Messaging info" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Displays the conversation screen for the initial conversation created for your user. A user and a new conversation will automatically be created if they don't exist. Ensure you have previously initialized the Zendesk SDK."
+          }
+        }
+      }
+    },
+    "This is a new text" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is translation"
+          }
+        }
+      }
+    },
+    "User authenticated: %@" : {
+
+    },
+    "Yes" : {
+
+    },
+    "Zendesk Authentication" : {
+
+    },
+    "Zendesk Authentication info" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Zendesk SDK allows authentication of end users so their identity can be trusted by agents using Zendesk."
+          }
+        }
+      }
+    },
+    "Zendesk Initialization" : {
+      "extractionState" : "manual"
+    },
+    "Zendesk Initialization info" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Initializes the Zendesk SDK with the channel key specified. Initializing will load your settings, and prepare the SDK to show a conversation."
+          }
+        }
+      }
+    },
+    "Zendesk Page View Events" : {
+
+    },
+    "Zendesk Page View Events info" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Visitor Path lets agents see what screen the end user had landed on, for better conversation context. A PageView object encapsulates information related to a user's interactions and passes it to the Page View Event API."
+          }
+        }
+      }
+    },
+    "Zendesk SDK Demo App" : {
+
+    }
+  },
+  "version" : "1.0"
+}
