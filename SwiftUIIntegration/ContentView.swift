@@ -39,7 +39,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NotificationPresenter()
+                NotificationPresenterView()
                 List {
                     // Initialization
                     Section(header: InfoBannerView.zendeskInitialization) {

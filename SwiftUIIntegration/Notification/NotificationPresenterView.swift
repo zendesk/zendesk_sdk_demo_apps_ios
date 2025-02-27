@@ -7,7 +7,7 @@
 import SwiftUI
 
 /// A view that presents the messaging view to present when a message notification is tapped.
-struct NotificationPresenter: View {
+struct NotificationPresenterView: View {
     @State private var isPresented = false
     var body: some View {
         NavigationLink(destination: MessagingNotificationView(), isActive: $isPresented) {

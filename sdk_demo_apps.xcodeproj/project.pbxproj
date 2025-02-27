@@ -117,7 +117,7 @@
 		9421868B2D673BAB00B04DCE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9421868A2D673BA600B04DCE /* Constants.swift */; };
 		9494EF552D6F58FB00E2A9BC /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494EF542D6F58FA00E2A9BC /* NotificationDelegate.swift */; };
 		9494EF572D6F591700E2A9BC /* NotificationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494EF562D6F591700E2A9BC /* NotificationViewModifier.swift */; };
-		9494EF5A2D6F5AF200E2A9BC /* NotificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494EF592D6F5AF100E2A9BC /* NotificationPresenter.swift */; };
+		9494EF5A2D6F5AF200E2A9BC /* NotificationPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494EF592D6F5AF100E2A9BC /* NotificationPresenterView.swift */; };
 		94A254142D638D49005846D2 /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 94A254132D638D49005846D2 /* ZendeskSDKMessaging */; };
 		94A254152D648905005846D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
 		94A254342D65EEF3005846D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A254302D65EEF3005846D2 /* ContentView.swift */; };
@@ -204,7 +204,7 @@
 		9421868A2D673BA600B04DCE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9494EF542D6F58FA00E2A9BC /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
 		9494EF562D6F591700E2A9BC /* NotificationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModifier.swift; sourceTree = "<group>"; };
-		9494EF592D6F5AF100E2A9BC /* NotificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenter.swift; sourceTree = "<group>"; };
+		9494EF592D6F5AF100E2A9BC /* NotificationPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenterView.swift; sourceTree = "<group>"; };
 		94A254042D638D1E005846D2 /* SwiftUIIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A2542E2D65EEF3005846D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94A254302D65EEF3005846D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -509,7 +509,7 @@
 		9494EF532D6F58E800E2A9BC /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				9494EF592D6F5AF100E2A9BC /* NotificationPresenter.swift */,
+				9494EF592D6F5AF100E2A9BC /* NotificationPresenterView.swift */,
 				9494EF562D6F591700E2A9BC /* NotificationViewModifier.swift */,
 				9494EF542D6F58FA00E2A9BC /* NotificationDelegate.swift */,
 				94F88E7B2D6F2BEE00D9E2F0 /* NotificationManager.swift */,
@@ -995,7 +995,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9494EF5A2D6F5AF200E2A9BC /* NotificationPresenter.swift in Sources */,
+				9494EF5A2D6F5AF200E2A9BC /* NotificationPresenterView.swift in Sources */,
 				94A2543E2D65EF5D005846D2 /* FormItem.swift in Sources */,
 				94A254402D65EF74005846D2 /* ClearableTextField.swift in Sources */,
 				9494EF572D6F591700E2A9BC /* NotificationViewModifier.swift in Sources */,
