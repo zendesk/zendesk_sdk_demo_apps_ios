@@ -115,6 +115,9 @@
 		6EB984C12B0EBF790021CA1D /* TagsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB984BD2B0EBF790021CA1D /* TagsCell.xib */; };
 		942186882D673B6A00B04DCE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 942186872D673B6A00B04DCE /* Localizable.xcstrings */; };
 		9421868B2D673BAB00B04DCE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9421868A2D673BA600B04DCE /* Constants.swift */; };
+		9494EF552D6F58FB00E2A9BC /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494EF542D6F58FA00E2A9BC /* NotificationDelegate.swift */; };
+		9494EF572D6F591700E2A9BC /* NotificationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494EF562D6F591700E2A9BC /* NotificationViewModifier.swift */; };
+		9494EF5A2D6F5AF200E2A9BC /* NotificationPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494EF592D6F5AF100E2A9BC /* NotificationPresenterView.swift */; };
 		94A254142D638D49005846D2 /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 94A254132D638D49005846D2 /* ZendeskSDKMessaging */; };
 		94A254152D648905005846D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
 		94A254342D65EEF3005846D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A254302D65EEF3005846D2 /* ContentView.swift */; };
@@ -126,6 +129,7 @@
 		94A254402D65EF74005846D2 /* ClearableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2543F2D65EF73005846D2 /* ClearableTextField.swift */; };
 		94A254422D65EF92005846D2 /* InfoBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A254412D65EF91005846D2 /* InfoBannerView.swift */; };
 		94A254442D65EFC7005846D2 /* MessagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A254432D65EFC4005846D2 /* MessagingView.swift */; };
+		94F88E7C2D6F2BF000D9E2F0 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F88E7B2D6F2BEE00D9E2F0 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +202,9 @@
 		6EB984BD2B0EBF790021CA1D /* TagsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsCell.xib; sourceTree = "<group>"; };
 		942186872D673B6A00B04DCE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9421868A2D673BA600B04DCE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9494EF542D6F58FA00E2A9BC /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		9494EF562D6F591700E2A9BC /* NotificationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModifier.swift; sourceTree = "<group>"; };
+		9494EF592D6F5AF100E2A9BC /* NotificationPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenterView.swift; sourceTree = "<group>"; };
 		94A254042D638D1E005846D2 /* SwiftUIIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A2542E2D65EEF3005846D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94A254302D65EEF3005846D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -209,6 +216,7 @@
 		94A2543F2D65EF73005846D2 /* ClearableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearableTextField.swift; sourceTree = "<group>"; };
 		94A254412D65EF91005846D2 /* InfoBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBannerView.swift; sourceTree = "<group>"; };
 		94A254432D65EFC4005846D2 /* MessagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingView.swift; sourceTree = "<group>"; };
+		94F88E7B2D6F2BEE00D9E2F0 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -498,6 +506,17 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		9494EF532D6F58E800E2A9BC /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				9494EF592D6F5AF100E2A9BC /* NotificationPresenterView.swift */,
+				9494EF562D6F591700E2A9BC /* NotificationViewModifier.swift */,
+				9494EF542D6F58FA00E2A9BC /* NotificationDelegate.swift */,
+				94F88E7B2D6F2BEE00D9E2F0 /* NotificationManager.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		94A2542F2D65EEF3005846D2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +528,7 @@
 		94A254332D65EEF3005846D2 /* SwiftUIIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				9494EF532D6F58E800E2A9BC /* Notification */,
 				942186892D673BA000B04DCE /* Utils */,
 				94A254312D65EEF3005846D2 /* SwiftUIIntegration.entitlements */,
 				94A254302D65EEF3005846D2 /* ContentView.swift */,
@@ -975,14 +995,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9494EF5A2D6F5AF200E2A9BC /* NotificationPresenterView.swift in Sources */,
 				94A2543E2D65EF5D005846D2 /* FormItem.swift in Sources */,
 				94A254402D65EF74005846D2 /* ClearableTextField.swift in Sources */,
+				9494EF572D6F591700E2A9BC /* NotificationViewModifier.swift in Sources */,
 				94A254342D65EEF3005846D2 /* ContentView.swift in Sources */,
 				94A2543A2D65EF2F005846D2 /* InitializationItem.swift in Sources */,
 				94A2543C2D65EF47005846D2 /* AuthenticationItem.swift in Sources */,
+				9494EF552D6F58FB00E2A9BC /* NotificationDelegate.swift in Sources */,
 				94A254352D65EEF3005846D2 /* SwiftUIIntegrationApp.swift in Sources */,
 				94A254422D65EF92005846D2 /* InfoBannerView.swift in Sources */,
 				94A254442D65EFC7005846D2 /* MessagingView.swift in Sources */,
+				94F88E7C2D6F2BF000D9E2F0 /* NotificationManager.swift in Sources */,
 				9421868B2D673BAB00B04DCE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
