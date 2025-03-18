@@ -60,7 +60,7 @@
       "location" : "https://github.com/zendesk/sdk_messaging_ios/",
       "state" : {
         "branch" : "main",
-        "revision" : "f878b8dd25d83fe1db067696f89b00009dba87bb"
+        "revision" : "87a8b16c6ad5d96cc8f11ccb568f0dfee006254a"
       }
     },
     {
@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_ui_components_ios",
       "state" : {
-        "revision" : "49a4e7d181b9fdc143ebc0577f01b9920945f46c",
-        "version" : "13.1.0"
+        "revision" : "fa89775c08bcad69da5221591e1df129410f12ff",
+        "version" : "13.1.1"
       }
     },
     {
