@@ -98,7 +98,7 @@ extension MainViewController {
             return UITableViewCell()
         }
 #warning("provide channel key")
-        let channel_key = "eyJzZXR0aW5nc191cmwiOiJodHRwczovL3o0bm5tdGVzdGFwcC56ZW5kZXNrLmNvbS9tb2JpbGVfc2RrX2FwaS9zZXR0aW5ncy8wMUhXN0hQUFlKRDNaNkJNNVQ5TlNNOThaNS5qc29uIn0="
+        let channel_key = ""
 
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
