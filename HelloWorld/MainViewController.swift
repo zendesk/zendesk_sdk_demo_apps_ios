@@ -99,7 +99,7 @@ extension MainViewController {
         }
 #warning("provide channel key")
         let channel_key = ""
-        
+
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
 #warning("Basic init code with a custom alert in case of failure, and a custom toast in case of success.")
@@ -126,6 +126,14 @@ extension MainViewController {
 #warning("Basic conversation presentation via the navigation controller.")
             guard let viewController = Zendesk.instance?.messaging?.messagingViewController() else { return }
             self.navigationController?.show(viewController, sender: self)
+
+            // This is an alternative way to present the messaging view controller using modal presention.
+            // When presenting modally, the messaging view controller needs to be in a navigation controller to work properly.
+//            self.navigationController?.present(
+//                UINavigationController(rootViewController: viewController),
+//                animated: true,
+//                completion: nil
+//            )
         }
         return cell
     }
