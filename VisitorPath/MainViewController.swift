@@ -135,6 +135,14 @@ extension MainViewController {
             guard let viewController = Zendesk.instance?.messaging?.messagingViewController() else { return }
             self.navigationController?.show(viewController, sender: self)
 
+            // This is an alternative way to present the messaging view controller using modal presention.
+            // When presenting modally, the messaging view controller needs to be in a navigation controller to work properly.
+//            self.navigationController?.present(
+//                UINavigationController(rootViewController: viewController),
+//                animated: true,
+//                completion: nil
+//            )
+
             // Create a `PageView` object
             let pageView = PageView(pageTitle: "example", url: "example.com")
             Zendesk.instance?.sendPageViewEvent(pageView) { result in
