@@ -35,7 +35,7 @@ This app allows you to send information to the pageView event API, which will ap
 This app allows you to configure push notifications that can appear when the end user is outside of the app, as well as inside the app but not in the conversation view. The notification banner will take you back to the conversation when tapped. There is an extra "registration" button that must be tapped and the user must allow notification permissions in order for this to work. The code is based on our documentation [here.](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/ios/push_notifications/) As the documentation suggests, much of the configuration must be done on Apple's end, and requires an Apple developer account. Please ensure that you have a properly configured [provisioning profile](https://developer.apple.com/help/account/manage-profiles/create-a-development-provisioning-profile/).
 
 ## Metadata
-This app allows you to allow values for conversation fields and conversation tags to be set in the SDK to add contextual data about the conversation. This information will show up in the ticket's sidebar, inside the corresponding ticket field and tags list. More information at our documentation [here.](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#messaging-metadata)
+This app allows you to allow values for conversation fields and conversation tags to be set in the SDK to add contextual data about the conversation. This information will show up in the ticket's sidebar, inside the corresponding ticket field and tags list. More information at our documentation [here.](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/ios/messaging_metadata/)
 
 
 ## Bugs
