@@ -28,6 +28,7 @@ struct ContentView: View {
     }
     @State private var pageViewTitle: String = ""
     @State private var pageViewUrl: String = ""
+    @State private var isPresentingMessagingModally = false
 
     private let logger = Logger(subsystem: Constants.bundleIdentifier, category: Constants.category)
 
@@ -51,6 +52,13 @@ struct ContentView: View {
                         })
                         NavigationLink(destination: MessagingView()) {
                             InfoBannerView.showMessaging
+                        }
+                        .disabled(!isInitialized)
+                        .opacity(isInitialized ? 1 : 0.5)
+                        Button {
+                            isPresentingMessagingModally = true
+                        } label: {
+                            Text("Present Messaging Modally")
                         }
                         .disabled(!isInitialized)
                         .opacity(isInitialized ? 1 : 0.5)
@@ -86,12 +94,18 @@ struct ContentView: View {
                 .navigationTitle("Zendesk SDK Demo App")
                 .navigationBarTitleDisplayMode(.inline)
             }
+            .onAppear {
+                // Existing Zendesk instance is invalidated to avoid any conflicts between the push and the modal presentation.
+                // This is not necessary in a real-world scenario when only one presentation method is used.
+                Zendesk.invalidate(false)
+                if !channelKey.isEmpty {
+                    initializeZendeskSDK()
+                }
+            }
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        .onAppear {
-            if !channelKey.isEmpty {
-                initializeZendeskSDK()
-            }
+        .sheet(isPresented: $isPresentingMessagingModally) {
+            MessagingView(isModal: true)
         }
     }
 

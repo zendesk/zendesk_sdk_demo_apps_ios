@@ -12,14 +12,21 @@ import ZendeskSDKMessaging
 
 /// A `View` that wraps the `MessagingViewController`.
 struct MessagingView: View {
-    init() {
-        #if DEBUG
+
+    let isModal: Bool
+
+    init(isModal: Bool = false) {
+#if DEBUG
         Logger.enabled = true
-        #endif
+#endif
+        self.isModal = isModal
     }
+
     var body: some View {
-        ViewControllerWrapper(viewController: Zendesk.instance?.messaging?.messagingViewController())
-            .ignoresSafeArea()
+        ViewControllerWrapper(
+            viewController: Zendesk.instance?.messaging?.messagingViewController(),
+            isModal: isModal
+        ).ignoresSafeArea()
     }
 }
 
@@ -34,9 +41,19 @@ struct MessagingNotificationView: View {
 /// A `UIViewControllerRepresentable` that wraps a `UIViewController`.
 struct ViewControllerWrapper: UIViewControllerRepresentable {
     var viewController: UIViewController?
+    let isModal: Bool
+
+    init(viewController: UIViewController?, isModal: Bool = false) {
+        self.viewController = viewController
+        self.isModal = isModal
+    }
 
     func makeUIViewController(context: Context) -> UIViewController {
-        viewController ?? ErrorViewController()
+        if isModal {
+            UINavigationController(rootViewController: viewController ?? ErrorViewController())
+        } else {
+            viewController ?? ErrorViewController()
+        }
     }
 
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
