@@ -110,7 +110,7 @@ extension MainViewController {
             return UITableViewCell()
         }
 #warning("Provide channel key")
-        let channel_key = "eyJzZXR0aW5nc191cmwiOiJodHRwczovL3o0bm5tdGVzdGFwcC56ZW5kZXNrLmNvbS9tb2JpbGVfc2RrX2FwaS9zZXR0aW5ncy8wMUVXSlRXQkpRMjlXRE5ZUEpORTIySkYzMy5qc29uIn0="
+        let channel_key = ""
 
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
@@ -181,7 +181,7 @@ extension MainViewController {
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
 #warning("Provide a conversation ID")
-            let conversation_ID = "690343bd8a47902b6a49c4eb"
+            let conversation_ID = ""
             // The exit action can be .returnToConversationList in case the application should return to the conversation list
             guard let viewController = Zendesk.instance?.messaging?.messagingViewController(.showConversation(conversationId: conversation_ID, exitAction: .close)) else { return }
             self.navigationController?.show(viewController, sender: self)
