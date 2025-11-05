@@ -136,6 +136,8 @@ extension MainViewController {
             // If table view fails to dequeue the cell we want (InitializeSDKCardCell) then show a dumb table view cell
             return UITableViewCell()
         }
+        cell.cardTitle.text = "Show Conversation (Default option)"
+        cell.cardDescription.text = "As a default option displays the most recent conversation screen for the initial conversation. A user and a new conversation will automatically be created if they don't exist. Ensure you have previously initialized the Zendesk SDK."
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
 #warning("Basic conversation presentation via the navigation controller.")
@@ -177,7 +179,7 @@ extension MainViewController {
             return UITableViewCell()
         }
         cell.cardTitle.text = "Show Conversation With ID"
-        cell.cardDescription.text = "Displays an especific conversation privided by an ID. A user and a new conversation will automatically be created if they don't exist. Ensure you have previously initialized the Zendesk SDK."
+        cell.cardDescription.text = "Displays a specific conversation privided by an ID. A user and a new conversation will automatically be created if they don't exist. Ensure you have previously initialized the Zendesk SDK."
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
 #warning("Provide a conversation ID")
