@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -130,6 +130,13 @@
 		94A254422D65EF92005846D2 /* InfoBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A254412D65EF91005846D2 /* InfoBannerView.swift */; };
 		94A254442D65EFC7005846D2 /* MessagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A254432D65EFC4005846D2 /* MessagingView.swift */; };
 		94F88E7C2D6F2BF000D9E2F0 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F88E7B2D6F2BEE00D9E2F0 /* NotificationManager.swift */; };
+		98393E372EB2421B00D7681C /* ZendeskSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 98393E362EB2421B00D7681C /* ZendeskSDKMessaging */; };
+		986CC38A2EB26BA800F21F2B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */; };
+		986CC3C12EB26DAA00F21F2B /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454148029B78D350009D58D /* InitializeSDKCardCell.swift */; };
+		986CC3C22EB26DAF00F21F2B /* InitializeSDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4454148129B78D350009D58D /* InitializeSDKCardCell.xib */; };
+		986CC3C32EB26DB600F21F2B /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */; };
+		986CC3C42EB26DBC00F21F2B /* ShowConversationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B2833229BEE32D00D85A34 /* ShowConversationCardCell.xib */; };
+		986CC4072EB37A8C00F21F2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -217,7 +224,22 @@
 		94A254412D65EF91005846D2 /* InfoBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBannerView.swift; sourceTree = "<group>"; };
 		94A254432D65EFC4005846D2 /* MessagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingView.swift; sourceTree = "<group>"; };
 		94F88E7B2D6F2BEE00D9E2F0 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		98393E212EB241C800D7681C /* MultiConvoNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiConvoNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		98393E322EB241CA00D7681C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 98393E202EB241C800D7681C /* MultiConvoNavigation */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		98393E222EB241C800D7681C /* MultiConvoNavigation */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (98393E322EB241CA00D7681C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = MultiConvoNavigation; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		445FA5752A321F3B00758AF9 /* Frameworks */ = {
@@ -281,6 +303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A254142D638D49005846D2 /* ZendeskSDKMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98393E1E2EB241C800D7681C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98393E372EB2421B00D7681C /* ZendeskSDKMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +380,7 @@
 				44B150152A1CA11000CC9FDF /* ClickableLinks */,
 				445FA5792A321F3B00758AF9 /* PushNotifications */,
 				94A254332D65EEF3005846D2 /* SwiftUIIntegration */,
+				98393E222EB241C800D7681C /* MultiConvoNavigation */,
 				4498390C29832A5F00B8196C /* Products */,
 				449DF7D429E4BC850024825E /* Frameworks */,
 			);
@@ -366,6 +397,7 @@
 				445FA5782A321F3B00758AF9 /* PushNotifications.app */,
 				6E2E215E2B0EB35400BA7C4F /* Metadata.app */,
 				94A254042D638D1E005846D2 /* SwiftUIIntegration.app */,
+				98393E212EB241C800D7681C /* MultiConvoNavigation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -716,6 +748,29 @@
 			productReference = 94A254042D638D1E005846D2 /* SwiftUIIntegration.app */;
 			productType = "com.apple.product-type.application";
 		};
+		98393E202EB241C800D7681C /* MultiConvoNavigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98393E332EB241CA00D7681C /* Build configuration list for PBXNativeTarget "MultiConvoNavigation" */;
+			buildPhases = (
+				98393E1D2EB241C800D7681C /* Sources */,
+				98393E1E2EB241C800D7681C /* Frameworks */,
+				98393E1F2EB241C800D7681C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				98393E222EB241C800D7681C /* MultiConvoNavigation */,
+			);
+			name = MultiConvoNavigation;
+			packageProductDependencies = (
+				98393E362EB2421B00D7681C /* ZendeskSDKMessaging */,
+			);
+			productName = MultiConvoNavigation;
+			productReference = 98393E212EB241C800D7681C /* MultiConvoNavigation.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -723,7 +778,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					445FA5772A321F3B00758AF9 = {
@@ -749,6 +804,9 @@
 					};
 					94A254032D638D1E005846D2 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					98393E202EB241C800D7681C = {
+						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
 			};
@@ -776,6 +834,7 @@
 				445FA5772A321F3B00758AF9 /* PushNotifications */,
 				6E2E21462B0EB35400BA7C4F /* Metadata */,
 				94A254032D638D1E005846D2 /* SwiftUIIntegration */,
+				98393E202EB241C800D7681C /* MultiConvoNavigation */,
 			);
 		};
 /* End PBXProject section */
@@ -887,6 +946,16 @@
 				94A254362D65EEF3005846D2 /* Preview Assets.xcassets in Resources */,
 				94A254152D648905005846D2 /* Assets.xcassets in Resources */,
 				942186882D673B6A00B04DCE /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98393E1F2EB241C800D7681C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986CC3C22EB26DAF00F21F2B /* InitializeSDKCardCell.xib in Resources */,
+				986CC3C42EB26DBC00F21F2B /* ShowConversationCardCell.xib in Resources */,
+				986CC4072EB37A8C00F21F2B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1008,6 +1077,16 @@
 				94A254442D65EFC7005846D2 /* MessagingView.swift in Sources */,
 				94F88E7C2D6F2BF000D9E2F0 /* NotificationManager.swift in Sources */,
 				9421868B2D673BAB00B04DCE /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98393E1D2EB241C800D7681C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986CC38A2EB26BA800F21F2B /* UIViewController+Extension.swift in Sources */,
+				986CC3C32EB26DB600F21F2B /* ShowConversationCardCell.swift in Sources */,
+				986CC3C12EB26DAA00F21F2B /* InitializeSDKCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1682,6 +1761,81 @@
 			};
 			name = Release;
 		};
+		98393E342EB241CA00D7681C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiConvoNavigation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zendesk.MultiConvoNavigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98393E352EB241CA00D7681C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiConvoNavigation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zendesk.MultiConvoNavigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1766,6 +1920,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		98393E332EB241CA00D7681C /* Build configuration list for PBXNativeTarget "MultiConvoNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98393E342EB241CA00D7681C /* Debug */,
+				98393E352EB241CA00D7681C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1824,6 +1987,11 @@
 			productName = ZendeskSDKMessaging;
 		};
 		94A254132D638D49005846D2 /* ZendeskSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
+			productName = ZendeskSDKMessaging;
+		};
+		98393E362EB2421B00D7681C /* ZendeskSDKMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4498393A29833B0E00B8196C /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */;
 			productName = ZendeskSDKMessaging;
