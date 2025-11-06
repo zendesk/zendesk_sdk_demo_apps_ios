@@ -137,7 +137,7 @@ extension MainViewController {
             return UITableViewCell()
         }
         cell.cardTitle.text = "Show Conversation (Default option)"
-        cell.cardDescription.text = "As a default option displays the most recent conversation screen for the initial conversation. A user and a new conversation will automatically be created if they don't exist. Ensure you have previously initialized the Zendesk SDK."
+        cell.cardDescription.text = "Displays the most recent conversation screen as default option. A user and a new conversation will automatically be created if they don't exist. Ensure you have previously initialized the Zendesk SDK."
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
 #warning("Basic conversation presentation via the navigation controller.")
