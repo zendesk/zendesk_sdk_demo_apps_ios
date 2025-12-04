@@ -9,7 +9,7 @@ import ZendeskSDK
 import ZendeskSDKMessaging
 
 class MainViewController: UIViewController {
-    
+
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var navBarInfo: UIBarButtonItem!
     @IBOutlet var demoAppView: UIView!
@@ -18,7 +18,11 @@ class MainViewController: UIViewController {
     static let showConversationCardCell = "ShowConversationCardCell"
     static let authenticationCell = "AuthenticationCell"
     var gradientLayer = CAGradientLayer()
-    
+
+    // MARK: - Bug Reproduction Mode
+    // Set to true to automatically reproduce the input field disappearing bug
+    private let enableBugReproductionMode = true
+
     override func viewDidLoad() {
         super.viewDidLoad()
         styling()
@@ -28,6 +32,14 @@ class MainViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorColor = .clear
+
+        // Auto-initialize and authenticate to reproduce the bug
+        if enableBugReproductionMode {
+            print("[BUG REPRODUCTION] Mode enabled - will auto-authenticate and show conversation")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+                self?.autoInitializeAndAuthenticate()
+            }
+        }
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -104,8 +116,8 @@ extension MainViewController {
             return UITableViewCell()
         }
 #warning("provide channel key")
-        let channel_key = ""
-        
+        let channel_key = "YOUR_CHANNEL_KEY_HERE"
+
         cell.clickHandler = {[weak self] in
             guard let self = self else { return }
             
@@ -158,7 +170,7 @@ extension MainViewController {
         cell.loginHandler = { [weak self] in
             guard let self = self else { return }
 #warning ("Provide JWT token from your service")
-            let jwt_token = ""
+            let jwt_token = "YOUR_JWT_TOKEN_HERE"
             
             Zendesk.instance?.loginUser(with: jwt_token) { result in
                 if case let .failure(error) = result {
@@ -188,8 +200,93 @@ extension MainViewController {
             
         }
         
-        
+
+
         return cell
     }
-    
+
+    // MARK: - Bug Reproduction Methods
+
+    /// Auto-initializes SDK and authenticates user to reproduce the bug
+    /// This simulates the customer's flow where they authenticate and immediately open conversation
+    private func autoInitializeAndAuthenticate() {
+        print("[BUG REPRODUCTION] Step 1: Initializing SDK...")
+
+#warning("provide channel key")
+        let channel_key = "YOUR_CHANNEL_KEY_HERE"
+
+        Zendesk.initialize(withChannelKey: channel_key,
+                           messagingFactory: DefaultMessagingFactory()) { [weak self] result in
+            if case let .failure(error) = result {
+                print("[BUG REPRODUCTION] SDK initialization failed: \(error.localizedDescription)")
+                self?.makeAlert(title: "Error", message: error.localizedDescription)
+            } else {
+                print("[BUG REPRODUCTION] SDK initialized successfully")
+                Zendesk.instance?.messaging?.enableInternalAnalytics(enabled: false)
+
+                DispatchQueue.main.async {
+                    self?.showToast(message: "SDK Initialized - Authenticating...", seconds: 1.5)
+                }
+
+                // Immediately authenticate after initialization
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self?.autoAuthenticateUser()
+                }
+            }
+        }
+    }
+
+    /// Authenticates user with JWT token
+    private func autoAuthenticateUser() {
+        print("[BUG REPRODUCTION] Step 2: Authenticating user...")
+
+#warning ("Provide JWT token from your service")
+        let jwt_token = "YOUR_JWT_TOKEN_HERE"
+
+        Zendesk.instance?.loginUser(with: jwt_token) { [weak self] result in
+            if case let .failure(error) = result {
+                print("[BUG REPRODUCTION] Authentication failed: \(error.localizedDescription)")
+                self?.makeAlert(title: "Error", message: error.localizedDescription)
+            } else {
+                print("[BUG REPRODUCTION] User authenticated successfully")
+
+                DispatchQueue.main.async {
+                    self?.showToast(message: "Authenticated - Opening Conversation...", seconds: 1.5)
+                }
+
+                // CRITICAL: Immediately show conversation after authentication
+                // This triggers rapid conversation updates that cause the bug
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    self?.autoShowConversation()
+                }
+            }
+        }
+    }
+
+    /// Shows conversation immediately after authentication
+    /// This reproduces the customer's flow and triggers the bug
+    private func autoShowConversation() {
+        print("[BUG REPRODUCTION] Step 3: Opening conversation immediately...")
+        print("[BUG REPRODUCTION] Watch for rapid 'Conversation updated' events")
+        print("[BUG REPRODUCTION] If input field is missing, the bug is reproduced!")
+
+        guard let viewController = Zendesk.instance?.messaging?.messagingViewController() else {
+            print("[BUG REPRODUCTION] Failed to get messaging view controller")
+            return
+        }
+
+        print("[BUG REPRODUCTION] Presenting conversation view controller")
+        self.navigationController?.show(viewController, sender: self)
+
+        // Give user feedback about what to check
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+            print("[BUG REPRODUCTION] CHECK NOW:")
+            print("   - Is the input field visible at the bottom?")
+            print("   - Can you tap and type in the input field?")
+            print("   - If NOT visible = BUG REPRODUCED!")
+            print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        }
+    }
+
 }
