@@ -96,6 +96,8 @@
 		44CC6EAA2A3142A7005AEF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
 		44CC6EAB2A3142A8005AEF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
 		44CC6EAC2A3142A8005AEF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449DF7C629E4BA200024825E /* Assets.xcassets */; };
+		51E4B0842EF25FBB00FBFD7C /* AuthenticationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E4B0832EF25FBB00FBFD7C /* AuthenticationCell.xib */; };
+		51E4B0852EF25FBB00FBFD7C /* AuthenticationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E4B0822EF25FBB00FBFD7C /* AuthenticationCell.swift */; };
 		6E2E214A2B0EB35400BA7C4F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */; };
 		6E2E214C2B0EB35400BA7C4F /* InitializeSDKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454148029B78D350009D58D /* InitializeSDKCardCell.swift */; };
 		6E2E214D2B0EB35400BA7C4F /* ShowConversationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A6E7C29BEA535004A9CBA /* ShowConversationCardCell.swift */; };
@@ -197,6 +199,8 @@
 		44C9E3AA2A0BD6CC00FDA5FC /* ShowUnreadCountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUnreadCountCell.swift; sourceTree = "<group>"; };
 		44C9E3AC2A0BE1DF00FDA5FC /* Unread messages.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Unread messages.entitlements"; sourceTree = "<group>"; };
 		44CC6EA22A313F00005AEF84 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		51E4B0822EF25FBB00FBFD7C /* AuthenticationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCell.swift; sourceTree = "<group>"; };
+		51E4B0832EF25FBB00FBFD7C /* AuthenticationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationCell.xib; sourceTree = "<group>"; };
 		6E2E215E2B0EB35400BA7C4F /* Metadata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metadata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2E21612B0EB43C00BA7C4F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6E2E21622B0EB43C00BA7C4F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -405,6 +409,8 @@
 		4498392729832ED700B8196C /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				51E4B0822EF25FBB00FBFD7C /* AuthenticationCell.swift */,
+				51E4B0832EF25FBB00FBFD7C /* AuthenticationCell.xib */,
 				4498392829832ED700B8196C /* AppDelegate.swift */,
 				4498392A29832ED700B8196C /* SceneDelegate.swift */,
 				4498392C29832ED700B8196C /* MainViewController.swift */,
@@ -874,6 +880,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44B2833329BEE32D00D85A34 /* ShowConversationCardCell.xib in Resources */,
+				51E4B0842EF25FBB00FBFD7C /* AuthenticationCell.xib in Resources */,
 				4454148329B78D350009D58D /* InitializeSDKCardCell.xib in Resources */,
 				44C6A09C299D428B00B9AC9C /* SharpSans-No1-Bold.otf in Resources */,
 				44CC6EAC2A3142A8005AEF84 /* Assets.xcassets in Resources */,
@@ -996,6 +1003,7 @@
 			files = (
 				442A6E7E29BEA535004A9CBA /* ShowConversationCardCell.swift in Sources */,
 				4498392D29832ED700B8196C /* MainViewController.swift in Sources */,
+				51E4B0852EF25FBB00FBFD7C /* AuthenticationCell.swift in Sources */,
 				4498392929832ED700B8196C /* AppDelegate.swift in Sources */,
 				44CC6EA32A313F00005AEF84 /* UIViewController+Extension.swift in Sources */,
 				4454148229B78D350009D58D /* InitializeSDKCardCell.swift in Sources */,
@@ -1936,16 +1944,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/zendesk/sdk_messaging_ios/";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = 2.35.0;
 			};
 		};
 		6E2E21482B0EB35400BA7C4F /* XCRemoteSwiftPackageReference "sdk_messaging_ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/zendesk/sdk_messaging_ios/";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = 2.35.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
