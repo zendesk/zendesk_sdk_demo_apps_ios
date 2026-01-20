@@ -2,15 +2,6 @@
   "originHash" : "87b0d994e64bd6ff12eb8bd49f226cd1bce033b40dd2ce373ded3fb31e4d667c",
   "pins" : [
     {
-      "identity" : "sdk_analytics_kit_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zendesk/sdk_analytics_kit_ios",
-      "state" : {
-        "revision" : "fd1475f098ad3246415d346186c049b32e342325",
-        "version" : "0.1.0"
-      }
-    },
-    {
       "identity" : "sdk_conversation_kit_ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_conversation_kit_ios",
@@ -70,7 +61,7 @@
       "location" : "https://github.com/zendesk/sdk_messaging_ios/",
       "state" : {
         "branch" : "main",
-        "revision" : "fa89a156aad6119c64d0581b575b917b8ce4eb02"
+        "revision" : "f9b9255ea28447cffb57b7d7feb6c546915a395c"
       }
     },
     {
