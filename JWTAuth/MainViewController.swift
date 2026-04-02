@@ -115,6 +115,7 @@ extension MainViewController {
                 if case let .failure(error) = result {
                     self.makeAlert(title: "Error", message: error.localizedDescription)
                 } else {
+                    Zendesk.instance?.messaging?.enableInternalAnalytics(enabled: false)
                     DispatchQueue.main.async {
                         self.showToast(message: "Initialization Successful", seconds: 2)
                     }
