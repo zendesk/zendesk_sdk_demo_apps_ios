@@ -123,6 +123,7 @@ extension ContentView {
                 // It returns a Zendesk instance that can be used to interact with the SDK.
                 // The Zendesk instance is a singleton and can be used throughout the app with `Zendesk.instance`.
                 _ = try await Zendesk.initialize(withChannelKey: channelKey, messagingFactory: DefaultMessagingFactory())
+                Zendesk.instance?.messaging?.enableInternalAnalytics(enabled: false)
                 logger.notice("Zendesk Initialization success")
                 logger.notice("Channel Key: \(channelKey)")
                 UserDefaults.standard.set(channelKey, forKey: Constants.channelKey)
