@@ -44,7 +44,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func infoButtonPressed(_ sender: Any) {
-        makeAlert(title: "About this app", message: "This demo app is to help developers get up and running with the Zendesk SDK by providing a quick working example of the software, and providing some useful quick action buttons explore the end user experience.")
+        makeAlert(title: "About this app", message: "This demo app is to help developers get up and running with the Zendesk SDK by providing a quick working example of the software, and providing some useful quick action buttons to explore the end user experience.")
     }
     
     func styling() {
@@ -128,7 +128,7 @@ extension MainViewController {
             guard let viewController = Zendesk.instance?.messaging?.messagingViewController() else { return }
             self.navigationController?.show(viewController, sender: self)
 
-            // This is an alternative way to present the messaging view controller using modal presention.
+            // This is an alternative way to present the messaging view controller using modal presentation.
             // When presenting modally, the messaging view controller needs to be in a navigation controller to work properly.
 //            self.navigationController?.present(
 //                UINavigationController(rootViewController: viewController),
