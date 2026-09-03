@@ -56,7 +56,7 @@ class MainViewController: UIViewController {
     
     
     @IBAction func infoButtonPressed(_ sender: Any) {
-        makeAlert(title: "About this app", message: "This demo app is to help developers get up and running with the Zendesk SDK by providing a quick working example of the software, and providing some useful quick action buttons explore the end user experience.")
+        makeAlert(title: "About this app", message: "This demo app is to help developers get up and running with the Zendesk SDK by providing a quick working example of the software, and providing some useful quick action buttons to explore the end user experience.")
     }
     
     
