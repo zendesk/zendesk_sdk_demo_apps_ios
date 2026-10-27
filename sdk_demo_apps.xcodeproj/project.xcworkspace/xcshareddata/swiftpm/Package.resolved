@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_analytics_kit_ios",
       "state" : {
-        "revision" : "89aca353d5b480351182e5f7d01ee2fcaa5beba4",
-        "version" : "1.1.0"
+        "revision" : "6e9ecf9fb627a4d1d72811e9df19adf1a68a2492",
+        "version" : "1.2.0"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_conversation_kit_ios",
       "state" : {
-        "revision" : "f71808f20512ce45b856a64115b28190e53de757",
-        "version" : "15.1.0"
+        "revision" : "7d717f85327eb1b40fc11385984b2e4b63747a69",
+        "version" : "15.2.0"
       }
     },
     {
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_core_utilities_ios",
       "state" : {
-        "revision" : "96b1e9c71fe1ffe784341e810da7573c78f852a9",
-        "version" : "8.2.0"
+        "revision" : "35a1ca574b1bc4c9ee6be6be3e27d926c025e05e",
+        "version" : "8.3.0"
       }
     },
     {
@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_faye_client_ios",
       "state" : {
-        "revision" : "72fd0ee896b681eeb7ff51f05b41cae81b68479c",
-        "version" : "1.17.0"
+        "revision" : "d58d6d418792ac55af4ab9d21d694b9d790f3c3d",
+        "version" : "1.18.0"
       }
     },
     {
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_guide_kit_ios",
       "state" : {
-        "revision" : "486e229d2d9def7ff0cf62e79492fabb3842249f",
-        "version" : "2.12.0"
+        "revision" : "baa3ce6d4ad6e7357365cee5ef2c50b73e9c17e8",
+        "version" : "2.13.0"
       }
     },
     {
@@ -51,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_http_client_ios",
       "state" : {
-        "revision" : "d68ed71651444bb1ecbccaf24af76a9ac4008ed8",
-        "version" : "0.22.0"
+        "revision" : "9ea5c9d197595b825c7980ede0b6014296b59300",
+        "version" : "0.23.0"
       }
     },
     {
@@ -60,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_logger_ios",
       "state" : {
-        "revision" : "f31290d725f729c02b5e468ecf73ab8100fb35da",
-        "version" : "0.12.0"
+        "revision" : "d9739215203f3f6b7f8742fd83739155aa7eed51",
+        "version" : "0.13.0"
       }
     },
     {
@@ -70,7 +70,7 @@
       "location" : "https://github.com/zendesk/sdk_messaging_ios/",
       "state" : {
         "branch" : "main",
-        "revision" : "81d0813bbc553349af088f2d7bfb433f15fc9fe2"
+        "revision" : "156ab5c7602dc8cc75b748170ad5672da6a59158"
       }
     },
     {
@@ -78,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_socket_client_ios",
       "state" : {
-        "revision" : "c1ed5c42dca4618229ee36ac09bc8423cc96a6a7",
-        "version" : "1.15.0"
+        "revision" : "ee35870e709d8be76eb00db80d38cb15661a33ac",
+        "version" : "1.16.0"
       }
     },
     {
@@ -87,8 +87,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_storage_ios",
       "state" : {
-        "revision" : "dfd683643d11af5a459d0de7a65de6e91b0b9c77",
-        "version" : "1.7.0"
+        "revision" : "0e321996c3def6e317a5436901371e4104b68c52",
+        "version" : "1.8.0"
       }
     },
     {
@@ -96,8 +96,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_ui_components_ios",
       "state" : {
-        "revision" : "7f55ce214656138b45085a34c13df432343f07b4",
-        "version" : "15.1.0"
+        "revision" : "1779d8c0a5803c614a8b0b6a313d4b7c5d647dbb",
+        "version" : "15.2.0"
       }
     },
     {
@@ -105,8 +105,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdk_zendesk_ios",
       "state" : {
-        "revision" : "1815f67c9ba8bbe4b85f8ec4cf1c16a93b6557de",
-        "version" : "3.19.0"
+        "revision" : "6b38930168120e0510120fba2a8d0a90e7db9ba0",
+        "version" : "3.20.0"
       }
     }
   ],
